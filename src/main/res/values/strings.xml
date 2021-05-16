@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Software_Developement_Project</string>
+    <string name="opening_tag">Available For All Your Shopping Needs!</string>
+    <string name="brand_name">My Project.</string>
+    <string name="already_a_member">Already a Member? Login Here.</string>
+    <string name="new_user">New User? Register Here.</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="i_am_an_admin">I am an Admin</string>
+    <string name="full_name">Full Name</string>
+    <string name="register">Register</string>
+    <string name="log_out">LOG OUT.</string>
+</resources>
