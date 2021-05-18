@@ -12,4 +12,6 @@
     <string name="register">Register</string>
     <string name="log_out">LOG OUT.</string>
     <string name="remember_me">Remember Me</string>
+    <string name="i_am_not_an_admin">I am not an Admin..</string>
+    <string name="add_new_product">Add New Product</string>
 </resources>

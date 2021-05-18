@@ -3,6 +3,7 @@ package com.example.software_developement_project;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,6 +12,7 @@ import android.view.View;
 import android.widget.Button;
 import com.rey.material.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.software_developement_project.Model.Users;
@@ -28,10 +30,12 @@ public class LoginActivity extends AppCompatActivity {
     private EditText inputPassword;
     private Button LoginButton;
     private ProgressDialog loadingBar;
+    private TextView AdminLink, NotAdminLink;
 
     private String parentDb = "Users";
     private CheckBox chkBox;
 
+    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,11 +45,24 @@ public class LoginActivity extends AppCompatActivity {
         inputNumber = findViewById(R.id.phone_number);
         inputPassword = findViewById(R.id.password);
         loadingBar = new ProgressDialog(this);
-
-        chkBox = (CheckBox) findViewById(R.id.remember_me);
+        AdminLink = findViewById(R.id.admin);
+        NotAdminLink = findViewById(R.id.not_admin);
+        chkBox = findViewById(R.id.remember_me);
         Paper.init(this);
 
         LoginButton.setOnClickListener(v -> LoginUser());
+        AdminLink.setOnClickListener(v -> {
+            LoginButton.setText("Login Admin");
+            AdminLink.setVisibility(View.INVISIBLE);
+            NotAdminLink.setVisibility(View.VISIBLE);
+            parentDb = "Admins";
+        });
+        NotAdminLink.setOnClickListener(v -> {
+            LoginButton.setText("Login");
+            AdminLink.setVisibility(View.VISIBLE);
+            NotAdminLink.setVisibility(View.INVISIBLE);
+            parentDb = "Users";
+        });
     }
 
     private void LoginUser(){
@@ -83,14 +100,26 @@ public class LoginActivity extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 if(snapshot.child(parentDb).child(phone).exists()){
                     Users usersData = snapshot.child(parentDb).child(phone).getValue(Users.class);
+                    assert usersData != null;
                     if (usersData.getPhone().equals(phone)){
                         if(usersData.getPassword().equals(password)){
-                            Toast.makeText(LoginActivity.this, "Logged in Successfully..",
-                                    Toast.LENGTH_SHORT).show();
-                            loadingBar.dismiss();
+                           if(parentDb.equals("Admins")){
+                               Toast.makeText(LoginActivity.this, "Welcome Admin, You are " +
+                                               "being Logged " +
+                                               "in..",
+                                       Toast.LENGTH_SHORT).show();
+                               loadingBar.dismiss();
 
-                            Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
-                            startActivity(intent);
+                               Intent intent = new Intent(LoginActivity.this, AdminCategory.class);
+                               startActivity(intent);
+                           } else if(parentDb.equals("Users")){
+                               Toast.makeText(LoginActivity.this, "Logged in Successfully..",
+                                       Toast.LENGTH_SHORT).show();
+                               loadingBar.dismiss();
+
+                               Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
+                               startActivity(intent);
+                           }
                         } else {
                             loadingBar.dismiss();
                             Toast.makeText(LoginActivity.this, "Password is Incorrect.",

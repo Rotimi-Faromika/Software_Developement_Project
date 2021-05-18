@@ -4,7 +4,6 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
-import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
@@ -21,6 +20,7 @@ import com.google.firebase.database.ValueEventListener;
 
 import io.paperdb.Paper;
 
+@SuppressWarnings("FieldCanBeLocal")
 public class LogChoice extends AppCompatActivity {
     private Button registerButton, loginButton, homePage;
     private ProgressDialog loadingBar;
@@ -73,6 +73,7 @@ public class LogChoice extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 if(snapshot.child("Users").child(phone).exists()){
                     Users usersData = snapshot.child("Users").child(phone).getValue(Users.class);
+                    assert usersData != null;
                     if (usersData.getPhone().equals(phone)){
                         if(usersData.getPassword().equals(password)){
                             Toast.makeText(LogChoice.this, "Logged in Successfully..",

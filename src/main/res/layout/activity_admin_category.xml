@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminCategory"
+    tools:ignore="ExtraText">
+
+    <TextView
+        android:id="@+id/slogan_space"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:text="@string/add_new_product"
+        android:textAlignment="center"
+        android:textSize="26sp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:id="@+id/linear_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/slogan_space"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/t_shirts"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/tshirt"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/dresses"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:src="@drawable/dress"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/trousers"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/jeans"
+            tools:ignore="ContentDescription" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_category2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/linear_category"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="45dp">
+        <ImageView
+            android:id="@+id/sweaters"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/sweaters"
+            tools:ignore="ContentDescription"/>
+
+        <ImageView
+            android:id="@+id/kidswear"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:src="@drawable/kids"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/shirts"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/shirts"
+            tools:ignore="ContentDescription"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_category3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/linear_category2"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="45dp">
+
+        <ImageView
+            android:id="@+id/hoodies"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:src="@drawable/hoodies"
+            tools:ignore="ContentDescription"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
