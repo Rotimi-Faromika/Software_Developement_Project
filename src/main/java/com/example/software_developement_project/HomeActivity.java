@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import io.paperdb.Paper;
+
 public class HomeActivity extends AppCompatActivity {
 
     private Button LogOut;
@@ -18,6 +20,7 @@ public class HomeActivity extends AppCompatActivity {
 
         LogOut = findViewById(R.id.logout_action);
          LogOut.setOnClickListener(v -> {
+             Paper.book().destroy();
              Intent intent = new Intent(HomeActivity.this, LogChoice.class);
              startActivity(intent);
          });

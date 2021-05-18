@@ -51,11 +51,32 @@
         android:autofillHints=""
         tools:ignore="TextFields" />
 
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/password"
+        android:layout_marginTop="5dp"/>
+
+    <com.rey.material.widget.CheckBox
+        android:id="@+id/remember_me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Material.Drawable.CheckBox"
+        android:text="@string/remember_me"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/password"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="17dp"
+        tools:ignore="RelativeOverlap" />
+
     <Button
         android:id="@+id/login_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/password"
+        android:layout_below="@id/remember_me"
         android:layout_marginTop="5dp"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"

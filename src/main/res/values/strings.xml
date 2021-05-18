@@ -11,4 +11,5 @@
     <string name="full_name">Full Name</string>
     <string name="register">Register</string>
     <string name="log_out">LOG OUT.</string>
+    <string name="remember_me">Remember Me</string>
 </resources>
