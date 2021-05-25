@@ -14,9 +14,12 @@
         android:theme="@style/Theme.Software_Developement_Project"
         tools:replace="android:appComponentFactory"
         tools:targetApi="p">
-        <activity android:name=".AdminCategory"></activity>
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/title_activity_home"
+            android:theme="@style/Theme.Software_Developement_Project.NoActionBar"></activity>
+        <activity android:name=".AdminCategory" />
         <activity android:name=".AdminProductActivity" />
-        <activity android:name=".HomeActivity" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".LogChoice" />
