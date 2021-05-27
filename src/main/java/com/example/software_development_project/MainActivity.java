@@ -1,9 +1,9 @@
-package com.example.software_developement_project;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.example.software_development_project;
 
 import android.content.Intent;
 import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.Timer;
 import java.util.TimerTask;

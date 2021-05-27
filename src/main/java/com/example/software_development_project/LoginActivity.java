@@ -1,7 +1,4 @@
-package com.example.software_developement_project;
-
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
+package com.example.software_development_project;
 
 import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
@@ -10,18 +7,21 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
-import com.rey.material.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.software_developement_project.Model.Users;
-import com.example.software_developement_project.Prevalent.Prevalent;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.software_development_project.Model.Users;
+import com.example.software_development_project.Prevalent.Prevalent;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.rey.material.widget.CheckBox;
 
 import io.paperdb.Paper;
 
@@ -118,6 +118,7 @@ public class LoginActivity extends AppCompatActivity {
                                loadingBar.dismiss();
 
                                Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
+                               Prevalent.currentOnlineUser = usersData;
                                startActivity(intent);
                            }
                         } else {

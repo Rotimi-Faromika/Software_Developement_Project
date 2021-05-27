@@ -1,4 +1,4 @@
-package com.example.software_developement_project;
+package com.example.software_development_project;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -10,8 +10,8 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.software_developement_project.Model.Users;
-import com.example.software_developement_project.Prevalent.Prevalent;
+import com.example.software_development_project.Model.Users;
+import com.example.software_development_project.Prevalent.Prevalent;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;

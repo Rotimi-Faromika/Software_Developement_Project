@@ -1,4 +1,4 @@
-package com.example.software_developement_project.Model;
+package com.example.software_development_project.Model;
 
 public class Users {
     private String Name, Phone, Password;

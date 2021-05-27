@@ -1,4 +1,4 @@
-package com.example.software_developement_project.ui.gallery;
+package com.example.software_development_project.ui.gallery;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,7 +12,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.software_developement_project.databinding.FragmentGalleryBinding;
+import com.example.software_development_project.databinding.FragmentGalleryBinding;
 
 public class GalleryFragment extends Fragment {
 
