@@ -20,7 +20,6 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.bumptech.glide.Glide;
 import com.example.software_development_project.Model.Products;
 import com.example.software_development_project.Prevalent.Prevalent;
 import com.example.software_development_project.ViewHolder.ProductViewHolder;
@@ -31,6 +30,7 @@ import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.squareup.picasso.Picasso;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 import io.paperdb.Paper;
@@ -57,7 +57,8 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         setSupportActionBar(toolbar);
 
         FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(v -> Snackbar.make(v, "", Snackbar.LENGTH_SHORT).setAction("Action", null).show());
+        fab.setOnClickListener(v -> Snackbar.make(v, "", Snackbar.LENGTH_LONG).setAction("Action",
+                null).show());
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, toolbar, R.string.main_drawer_open, R.string.main_drawer_close);
@@ -97,12 +98,12 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                 new FirebaseRecyclerAdapter<Products, ProductViewHolder>(options) {
                     @SuppressLint("SetTextI18n")
                     @Override
-                    protected void onBindViewHolder(@NonNull ProductViewHolder productViewHolder, int i,
+                    protected void onBindViewHolder(@NonNull ProductViewHolder holder, int i,
                                                     @NonNull Products products) {
-                        productViewHolder.txtProductName.setText(products.getPname());
-                        productViewHolder.txtProductDescription.setText(products.getDescription());
-                        productViewHolder.txtProductPrice.setText("Price = " + products.getPrice() + "€");
-                        Glide.with(context).load(products.getImage()).into(productViewHolder.imageView);
+                        holder.txtProductName.setText(products.getPname());
+                        holder.txtProductDescription.setText(products.getDescription());
+                        holder.txtProductPrice.setText("Price = " + products.getPrice());
+                        Picasso.get().load(products.getImage()).fit().into(holder.imageView);
                     }
 
                     @NonNull
@@ -110,7 +111,9 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                     public ProductViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
                         View view =
                                 LayoutInflater.from(parent.getContext()).inflate(R.layout.product_items_layout, parent, false);
-                        return new ProductViewHolder(view);
+                        //noinspection UnnecessaryLocalVariable
+                        ProductViewHolder holder = new ProductViewHolder(view);
+                        return holder;
                     }
                 };
         recyclerView.setAdapter(adapter);
@@ -125,7 +128,6 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         } else {
             super.onBackPressed();
         }
-
     }
 
     @Override
@@ -139,11 +141,9 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     public boolean onOptionsItemSelected(MenuItem item) {
         //noinspection unused
         int id = item.getItemId();
-
         // if ((id == R.id.action_settings)){
         //   return true;
         //}
-
         return super.onOptionsItemSelected(item);
     }
 

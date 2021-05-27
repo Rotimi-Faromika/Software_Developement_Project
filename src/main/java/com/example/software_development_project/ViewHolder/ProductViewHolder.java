@@ -32,6 +32,7 @@ public class ProductViewHolder extends RecyclerView.ViewHolder implements View.O
 
     @Override
     public void onClick(View view) {
+        //noinspection deprecation
         listener.onClick(view, getAdapterPosition(), false);
 
     }

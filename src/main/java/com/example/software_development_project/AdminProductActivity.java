@@ -66,7 +66,8 @@ public class AdminProductActivity extends AppCompatActivity {
     private void OpenGallery() {
         Intent galleryIntent = new Intent();
         galleryIntent.setAction(Intent.ACTION_GET_CONTENT);
-        galleryIntent.setType("image/");
+        galleryIntent.setType("image/*");
+        //noinspection deprecation
         startActivityForResult(galleryIntent, GalleryPick);
 
     }
@@ -134,7 +135,6 @@ public class AdminProductActivity extends AppCompatActivity {
             Task<Uri> uriTask = uploadTask.continueWithTask(task -> {
                 if (!task.isSuccessful()) {
                     throw Objects.requireNonNull(task.getException());
-
                 }
                 downloadImageUrl = filePath.getDownloadUrl().toString();
                 return filePath.getDownloadUrl();

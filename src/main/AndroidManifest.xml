@@ -19,11 +19,14 @@
         android:theme="@style/Theme.Software_Development_Project"
         tools:replace="android:appComponentFactory"
         tools:ignore="AllowBackup"
+        android:largeHeap="true"
         tools:targetApi="p">
         <activity
             android:name="com.example.software_development_project.HomeActivity"
             android:label="@string/title_activity_home"
-            android:theme="@style/Theme.Software_Development_Project.NoActionBar"></activity>
+            android:theme="@style/Theme.Software_Development_Project.NoActionBar">
+
+        </activity>
         <activity android:name="com.example.software_development_project.AdminCategory" />
         <activity android:name="com.example.software_development_project.AdminProductActivity" />
         <activity android:name="com.example.software_development_project.RegisterActivity" />
