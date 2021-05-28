@@ -74,6 +74,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         CircleImageView profileImageView = headerView.findViewById(R.id.profile_picture);
 
         userNameTextView.setText(Prevalent.currentOnlineUser.getName());
+        Picasso.get().load(Prevalent.currentOnlineUser.getImage()).placeholder(R.drawable.profile).into(profileImageView);
 
         recyclerView = findViewById(R.id.recycler_menu);
         recyclerView.setHasFixedSize(true);
@@ -104,6 +105,12 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                         holder.txtProductDescription.setText(products.getDescription());
                         holder.txtProductPrice.setText("Price = " + products.getPrice());
                         Picasso.get().load(products.getImage()).fit().into(holder.imageView);
+
+                        holder.itemView.setOnClickListener(v -> {
+                            Intent intent = new Intent(HomeActivity.this, ProductDetailsActivity.class);
+                            intent.putExtra("pid", products.getPid());
+                            startActivity(intent);
+                        });
                     }
 
                     @NonNull
@@ -158,7 +165,8 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         } else if (id == R.id.nav_categories) {
 
         } else if (id == R.id.nav_settings) {
-
+            Intent intent = new Intent(HomeActivity.this, SettingsActivity.class);
+            startActivity(intent);
         } else if (id == R.id.nav_logout) {
             Paper.book().destroy();
             Intent intent = new Intent(HomeActivity.this, LogChoice.class);

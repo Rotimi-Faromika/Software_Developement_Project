@@ -81,6 +81,7 @@ public class LogChoice extends AppCompatActivity {
                             loadingBar.dismiss();
 
                             Intent intent = new Intent(LogChoice.this, HomeActivity.class);
+                            Prevalent.currentOnlineUser = usersData;
                             startActivity(intent);
                         } else {
                             loadingBar.dismiss();
