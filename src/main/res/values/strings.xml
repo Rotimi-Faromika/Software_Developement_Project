@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Software_Development_Project</string>
     <string name="opening_tag">Available For All Your Shopping Needs!</string>
     <string name="brand_name">My Project.</string>
@@ -38,4 +38,7 @@
     <string name="change_profile">Change Profile </string>
     <string name="address">Address...</string>
     <string name="add_to_cart">Add to Cart</string>
+    <string name="total_price">Total Price =</string>
+    <string name="next">Next</string>
+    <string name="product_quantity" tools:keep="@string/product_quantity">Product Quantity</string>
 </resources>

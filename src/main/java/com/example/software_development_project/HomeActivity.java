@@ -27,7 +27,6 @@ import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
-import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.squareup.picasso.Picasso;
@@ -57,8 +56,10 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         setSupportActionBar(toolbar);
 
         FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(v -> Snackbar.make(v, "", Snackbar.LENGTH_LONG).setAction("Action",
-                null).show());
+        fab.setOnClickListener(v -> {
+            Intent intent = new Intent(HomeActivity.this, CartActivity.class);
+            startActivity(intent);
+        });
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, toolbar, R.string.main_drawer_open, R.string.main_drawer_close);
@@ -159,7 +160,8 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     public boolean onNavigationItemSelected(MenuItem item) {
         int id = item.getItemId();
         if (id == R.id.nav_cart) {
-
+            Intent intent = new Intent(HomeActivity.this, CartActivity.class);
+            startActivity(intent);
         } else if (id == R.id.nav_orders) {
 
         } else if (id == R.id.nav_categories) {

@@ -10,7 +10,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.software_development_project.Prevalent.Prevalent;
@@ -84,8 +83,7 @@ public class SettingsActivity extends AppCompatActivity {
     }
 
     private void updateOnlyUserInfo() {
-        DatabaseReference ref = FirebaseDatabase.getInstance().getReference().child(
-                "Users");
+        DatabaseReference ref = FirebaseDatabase.getInstance().getReference().child("Users");
         HashMap<String, Object> userMap = new HashMap<>();
         userMap.put("name", fullNameEdit.getText().toString());
         userMap.put("address", addressEdit.getText().toString());
@@ -100,7 +98,7 @@ public class SettingsActivity extends AppCompatActivity {
     }
 
     @Override
-    protected void onActivityResult(int requestCode, int resultCode, @Nullable @org.jetbrains.annotations.Nullable Intent data) {
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
         if (requestCode == CropImage.CROP_IMAGE_ACTIVITY_REQUEST_CODE && resultCode == RESULT_OK && data != null) {
@@ -196,13 +194,13 @@ public class SettingsActivity extends AppCompatActivity {
             public void onDataChange(@NonNull @NotNull DataSnapshot snapshot) {
                 if (snapshot.exists()) {
                     if (snapshot.child("image").exists()) {
-                        String image =
-                                Objects.requireNonNull(snapshot.child("Image").getValue()).toString();
+                        //noinspection UnusedAssignment
+                        String image = "";
+                        image = Objects.requireNonNull(snapshot.child("Image").getValue()).toString();
                         String name = Objects.requireNonNull(snapshot.child("Name").getValue()).toString();
                         String phone = Objects.requireNonNull(snapshot.child("Phone").getValue()).toString();
                         String password = Objects.requireNonNull(snapshot.child("Password").getValue()).toString();
-                        String address =
-                                Objects.requireNonNull(snapshot.child("Address").getValue()).toString();
+                        String address = Objects.requireNonNull(snapshot.child("Address").getValue()).toString();
 
                         Picasso.get().load(image).into(profileImageView);
                         fullNameEdit.setText(name);

@@ -50,7 +50,10 @@ public class ProductDetailsActivity extends AppCompatActivity {
 
         getProductDetails(productID);
 
-        addToCart.setOnClickListener(v -> addingToCartList());
+        //noinspection CodeBlock2Expr
+        addToCart.setOnClickListener(v -> {
+            addingToCartList();
+        });
     }
 
     private void addingToCartList() {
@@ -65,9 +68,7 @@ public class ProductDetailsActivity extends AppCompatActivity {
         saveCurrentTime = currentTime.format(calForDate.getTime());
 
         final DatabaseReference cartListRef = FirebaseDatabase.getInstance().getReference().child(
-                "Cart" +
-                        " List");
-
+                "Cart" + " List");
         final HashMap<String, Object> cartMap = new HashMap<>();
         cartMap.put("pid", productID);
         cartMap.put("pname", productName.getText().toString());
