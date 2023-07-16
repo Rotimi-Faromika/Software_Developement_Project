@@ -5,21 +5,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
     tools:context=".ProductDetailsActivity">
 
     <ImageView
         android:id="@+id/product_image_details"
         android:layout_width="match_parent"
-        android:layout_height="425dp"
+        android:layout_height="350dp"
         android:scaleType="centerCrop"
-        tools:ignore="ContentDescription" />
+        android:layout_margin="10dp"
+        tools:ignore="ContentDescription"/>
 
     <TextView
         android:id="@+id/product_name_details"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/product_image_details"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:gravity="center"
         android:text="@string/product__name"
         android:textColor="@color/black"
@@ -31,7 +33,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/product_name_details"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:gravity="center"
         android:text="@string/product__description"
         android:textColor="@color/black"
@@ -43,7 +45,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/product_description_details"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:gravity="center"
         android:text="@string/product__price"
         android:textColor="@color/black"
@@ -56,18 +58,31 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/product_price_details"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:elevation="6dp"
         app:finalNumber="10"
         app:initialNumber="1"
         app:textSize="16sp"></com.cepheuen.elegantnumberbutton.view.ElegantNumberButton>
 
     <Button
+        android:id="@+id/reserve_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/number_btn"
+        android:layout_margin="5dp"
+        android:layout_marginTop="5dp"
+        android:padding="20dp"
+        android:text="@string/reserve_product"
+        android:textSize="18sp"/>
+
+    <Button
         android:id="@+id/add_to_cart"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_margin="15dp"
+        android:layout_below="@+id/reserve_product"
+        android:layout_alignParentBottom="false"
+        android:layout_margin="5dp"
+        android:padding="18dp"
         android:text="@string/add_to_cart"
         android:textSize="18sp" />
 

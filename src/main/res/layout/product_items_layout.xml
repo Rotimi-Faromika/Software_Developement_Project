@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:layout_marginStart="15dp"
     android:layout_marginTop="20dp"
     android:layout_marginEnd="15dp"
@@ -11,7 +11,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
         <TextView
             android:id="@+id/product_name"
@@ -19,6 +19,7 @@
             android:layout_height="wrap_content"
             android:text="@string/product__name"
             android:textAlignment="center"
+            android:layout_marginTop="10dp"
             android:textSize="20sp"
             android:textColor="@color/black"
             android:textStyle="bold" />
@@ -44,6 +45,7 @@
             android:layout_gravity="center_horizontal"
             android:text="@string/product__price"
             android:textAlignment="center"
+            android:layout_marginBottom="10dp"
             android:textColor="@color/black"
             android:textSize="18sp"
             android:textStyle="bold" />
@@ -54,6 +56,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/product_price"
             android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
             android:text="@string/product__description"
             android:textAlignment="center"
             android:textColor="@color/black"

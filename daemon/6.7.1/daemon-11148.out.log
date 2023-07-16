@@ -1,0 +1,558 @@
+2021-06-01T19:28:03.540+0100 [DEBUG] [org.gradle.launcher.daemon.bootstrap.DaemonMain] Assuming the daemon was started with following jvm opts: [--add-opens, java.base/java.util=ALL-UNNAMED, --add-opens, java.base/java.lang=ALL-UNNAMED, --add-opens, java.base/java.lang.invoke=ALL-UNNAMED, --add-opens, java.prefs/java.util.prefs=ALL-UNNAMED, -Xmx2048m, -Dfile.encoding=UTF-8, -Duser.country=IE, -Duser.language=en, -Duser.variant]
+2021-06-01T19:28:03.920+0100 [DEBUG] [org.gradle.internal.nativeintegration.services.NativeServices] Native-platform posix files integration is not available. Continuing with fallback.
+2021-06-01T19:28:03.967+0100 [INFO] [org.gradle.launcher.daemon.server.Daemon] start() called on daemon - DefaultDaemonContext[uid=6c80802a-9b95-46d8-be7d-b58c77a0853d,javaHome=C:\Users\farom\AppData\Local\JetBrains\Toolbox\apps\AndroidStudio\ch-0\202.7351085\jre,daemonRegistryDir=C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\daemon,pid=11148,idleTimeout=10800000,priority=NORMAL,daemonOpts=--add-opens,java.base/java.util=ALL-UNNAMED,--add-opens,java.base/java.lang=ALL-UNNAMED,--add-opens,java.base/java.lang.invoke=ALL-UNNAMED,--add-opens,java.prefs/java.util.prefs=ALL-UNNAMED,-Xmx2048m,-Dfile.encoding=UTF-8,-Duser.country=IE,-Duser.language=en,-Duser.variant]
+2021-06-01T19:28:05.645+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Software Loopback Interface 1
+2021-06-01T19:28:05.654+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? true
+2021-06-01T19:28:05.667+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback address /127.0.0.1
+2021-06-01T19:28:05.669+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback address /0:0:0:0:0:0:0:1
+2021-06-01T19:28:05.673+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft 6to4 Adapter
+2021-06-01T19:28:05.680+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2021-06-01T19:28:05.680+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft IP-HTTPS Platform Adapter
+2021-06-01T19:28:05.687+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2021-06-01T19:28:05.687+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP-Windows Adapter V9 #2
+2021-06-01T19:28:05.694+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2021-06-01T19:28:05.695+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:c48:e8e2:47d7:f179%net2
+2021-06-01T19:28:05.696+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (L2TP)
+2021-06-01T19:28:05.702+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2021-06-01T19:28:05.703+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter #2
+2021-06-01T19:28:05.712+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2021-06-01T19:28:05.713+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:1c33:4f9c:ca98:c522%wlan0
+2021-06-01T19:28:05.714+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface VirtualBox Host-Only Ethernet Adapter
+2021-06-01T19:28:05.720+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2021-06-01T19:28:05.721+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /169.254.16.156
+2021-06-01T19:28:05.722+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:31b3:4369:83d7:109c%eth0
+2021-06-01T19:28:05.722+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Kernel Debug Network Adapter
+2021-06-01T19:28:05.762+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2021-06-01T19:28:05.763+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Bluetooth Device (Personal Area Network)
+2021-06-01T19:28:05.771+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2021-06-01T19:28:05.771+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (SSTP)
+2021-06-01T19:28:05.778+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2021-06-01T19:28:05.779+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Intel(R) Dual Band Wireless-AC 3165
+2021-06-01T19:28:05.785+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2021-06-01T19:28:05.786+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /192.168.1.6
+2021-06-01T19:28:05.787+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:f947:8a3e:5091:e4b8%wlan1
+2021-06-01T19:28:05.787+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface SurfEasy TAP-Windows Adapter V9
+2021-06-01T19:28:05.794+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2021-06-01T19:28:05.795+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:d953:2e2:f412:2a8e%eth3
+2021-06-01T19:28:05.795+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter
+2021-06-01T19:28:05.802+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2021-06-01T19:28:05.802+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:685b:98f1:a2e9:f667%wlan2
+2021-06-01T19:28:05.803+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Teredo Tunneling Adapter
+2021-06-01T19:28:05.809+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2021-06-01T19:28:05.810+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (PPPOE)
+2021-06-01T19:28:05.831+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2021-06-01T19:28:05.831+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (IP)
+2021-06-01T19:28:05.838+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2021-06-01T19:28:05.839+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (Network Monitor)
+2021-06-01T19:28:05.845+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2021-06-01T19:28:05.846+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (PPTP)
+2021-06-01T19:28:05.867+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2021-06-01T19:28:05.868+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP-Windows Adapter V9
+2021-06-01T19:28:05.874+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2021-06-01T19:28:05.875+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:f8ef:166:e83d:5cce%net7
+2021-06-01T19:28:05.875+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (IKEv2)
+2021-06-01T19:28:05.883+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2021-06-01T19:28:05.884+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (IPv6)
+2021-06-01T19:28:05.891+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2021-06-01T19:28:05.892+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface SurfEasy TAP-Windows Adapter V9-WFP Native MAC Layer LightWeight Filter-0000
+2021-06-01T19:28:05.899+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2021-06-01T19:28:05.900+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface SurfEasy TAP-Windows Adapter V9-Npcap Packet Driver (NPCAP)-0000
+2021-06-01T19:28:05.906+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2021-06-01T19:28:05.906+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface SurfEasy TAP-Windows Adapter V9-VirtualBox NDIS Light-Weight Filter-0000
+2021-06-01T19:28:05.913+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2021-06-01T19:28:05.914+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface SurfEasy TAP-Windows Adapter V9-QoS Packet Scheduler-0000
+2021-06-01T19:28:05.919+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2021-06-01T19:28:05.920+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface SurfEasy TAP-Windows Adapter V9-WFP 802.3 MAC Layer LightWeight Filter-0000
+2021-06-01T19:28:05.930+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2021-06-01T19:28:05.930+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface VirtualBox Host-Only Ethernet Adapter-WFP Native MAC Layer LightWeight Filter-0000
+2021-06-01T19:28:05.937+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2021-06-01T19:28:05.938+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface VirtualBox Host-Only Ethernet Adapter-Npcap Packet Driver (NPCAP)-0000
+2021-06-01T19:28:05.944+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2021-06-01T19:28:05.945+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface VirtualBox Host-Only Ethernet Adapter-QoS Packet Scheduler-0000
+2021-06-01T19:28:05.977+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2021-06-01T19:28:05.977+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface VirtualBox Host-Only Ethernet Adapter-WFP 802.3 MAC Layer LightWeight Filter-0000
+2021-06-01T19:28:06.023+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2021-06-01T19:28:06.024+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP-Windows Adapter V9-WFP Native MAC Layer LightWeight Filter-0000
+2021-06-01T19:28:06.031+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2021-06-01T19:28:06.032+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP-Windows Adapter V9-Npcap Packet Driver (NPCAP)-0000
+2021-06-01T19:28:06.040+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2021-06-01T19:28:06.040+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP-Windows Adapter V9 #2-WFP Native MAC Layer LightWeight Filter-0000
+2021-06-01T19:28:06.047+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2021-06-01T19:28:06.048+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP-Windows Adapter V9-VirtualBox NDIS Light-Weight Filter-0000
+2021-06-01T19:28:06.054+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2021-06-01T19:28:06.054+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP-Windows Adapter V9-QoS Packet Scheduler-0000
+2021-06-01T19:28:06.062+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2021-06-01T19:28:06.062+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP-Windows Adapter V9 #2-Npcap Packet Driver (NPCAP)-0000
+2021-06-01T19:28:06.068+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2021-06-01T19:28:06.069+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP-Windows Adapter V9 #2-VirtualBox NDIS Light-Weight Filter-0000
+2021-06-01T19:28:06.073+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2021-06-01T19:28:06.074+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP-Windows Adapter V9-WFP 802.3 MAC Layer LightWeight Filter-0000
+2021-06-01T19:28:06.078+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2021-06-01T19:28:06.079+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP-Windows Adapter V9 #2-QoS Packet Scheduler-0000
+2021-06-01T19:28:06.084+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2021-06-01T19:28:06.085+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP-Windows Adapter V9 #2-WFP 802.3 MAC Layer LightWeight Filter-0000
+2021-06-01T19:28:06.090+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2021-06-01T19:28:06.090+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Intel(R) Dual Band Wireless-AC 3165-WFP Native MAC Layer LightWeight Filter-0000
+2021-06-01T19:28:06.097+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2021-06-01T19:28:06.097+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Intel(R) Dual Band Wireless-AC 3165-Virtual WiFi Filter Driver-0000
+2021-06-01T19:28:06.108+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2021-06-01T19:28:06.108+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Intel(R) Dual Band Wireless-AC 3165-Native WiFi Filter Driver-0000
+2021-06-01T19:28:06.118+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2021-06-01T19:28:06.118+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Intel(R) Dual Band Wireless-AC 3165-Npcap Packet Driver (NPCAP)-0000
+2021-06-01T19:28:06.125+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2021-06-01T19:28:06.125+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Intel(R) Dual Band Wireless-AC 3165-VirtualBox NDIS Light-Weight Filter-0000
+2021-06-01T19:28:06.132+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2021-06-01T19:28:06.132+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Intel(R) Dual Band Wireless-AC 3165-QoS Packet Scheduler-0000
+2021-06-01T19:28:06.138+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2021-06-01T19:28:06.138+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Intel(R) Dual Band Wireless-AC 3165-WFP 802.3 MAC Layer LightWeight Filter-0000
+2021-06-01T19:28:06.142+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2021-06-01T19:28:06.143+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter-WFP Native MAC Layer LightWeight Filter-0000
+2021-06-01T19:28:06.147+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2021-06-01T19:28:06.148+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter-Native WiFi Filter Driver-0000
+2021-06-01T19:28:06.156+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2021-06-01T19:28:06.156+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (IP)-WFP Native MAC Layer LightWeight Filter-0000
+2021-06-01T19:28:06.162+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2021-06-01T19:28:06.162+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (IP)-Npcap Packet Driver (NPCAP)-0000
+2021-06-01T19:28:06.169+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2021-06-01T19:28:06.170+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (IP)-QoS Packet Scheduler-0000
+2021-06-01T19:28:06.176+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2021-06-01T19:28:06.176+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (IPv6)-WFP Native MAC Layer LightWeight Filter-0000
+2021-06-01T19:28:06.183+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2021-06-01T19:28:06.183+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (IPv6)-Npcap Packet Driver (NPCAP)-0000
+2021-06-01T19:28:06.190+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2021-06-01T19:28:06.190+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (IPv6)-QoS Packet Scheduler-0000
+2021-06-01T19:28:06.196+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2021-06-01T19:28:06.197+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (Network Monitor)-WFP Native MAC Layer LightWeight Filter-0000
+2021-06-01T19:28:06.205+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2021-06-01T19:28:06.205+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (Network Monitor)-Npcap Packet Driver (NPCAP)-0000
+2021-06-01T19:28:06.212+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2021-06-01T19:28:06.213+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (Network Monitor)-QoS Packet Scheduler-0000
+2021-06-01T19:28:06.226+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2021-06-01T19:28:06.227+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter-Npcap Packet Driver (NPCAP)-0000
+2021-06-01T19:28:06.233+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2021-06-01T19:28:06.234+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter-VirtualBox NDIS Light-Weight Filter-0000
+2021-06-01T19:28:06.241+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2021-06-01T19:28:06.242+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter-QoS Packet Scheduler-0000
+2021-06-01T19:28:06.248+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2021-06-01T19:28:06.248+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter-WFP 802.3 MAC Layer LightWeight Filter-0000
+2021-06-01T19:28:06.254+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2021-06-01T19:28:06.255+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter #2-WFP Native MAC Layer LightWeight Filter-0000
+2021-06-01T19:28:06.262+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2021-06-01T19:28:06.262+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter #2-Native WiFi Filter Driver-0000
+2021-06-01T19:28:06.269+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2021-06-01T19:28:06.269+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter #2-Npcap Packet Driver (NPCAP)-0000
+2021-06-01T19:28:06.276+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2021-06-01T19:28:06.277+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter #2-VirtualBox NDIS Light-Weight Filter-0000
+2021-06-01T19:28:06.282+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2021-06-01T19:28:06.283+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter #2-QoS Packet Scheduler-0000
+2021-06-01T19:28:06.289+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2021-06-01T19:28:06.289+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter #2-WFP 802.3 MAC Layer LightWeight Filter-0000
+2021-06-01T19:28:06.296+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2021-06-01T19:28:06.303+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpIncomingConnector] Listening on [2be1bbfc-7c83-46e4-85e1-7e509ac060ff port:62404, addresses:[localhost/127.0.0.1]].
+2021-06-01T19:28:06.328+0100 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] Daemon starting at: Tue Jun 01 19:28:06 BST 2021, with address: [2be1bbfc-7c83-46e4-85e1-7e509ac060ff port:62404, addresses:[localhost/127.0.0.1]]
+2021-06-01T19:28:06.329+0100 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Advertising the daemon address to the clients: [2be1bbfc-7c83-46e4-85e1-7e509ac060ff port:62404, addresses:[localhost/127.0.0.1]]
+2021-06-01T19:28:06.330+0100 [DEBUG] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Advertised daemon context: DefaultDaemonContext[uid=6c80802a-9b95-46d8-be7d-b58c77a0853d,javaHome=C:\Users\farom\AppData\Local\JetBrains\Toolbox\apps\AndroidStudio\ch-0\202.7351085\jre,daemonRegistryDir=C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\daemon,pid=11148,idleTimeout=10800000,priority=NORMAL,daemonOpts=--add-opens,java.base/java.util=ALL-UNNAMED,--add-opens,java.base/java.lang=ALL-UNNAMED,--add-opens,java.base/java.lang.invoke=ALL-UNNAMED,--add-opens,java.prefs/java.util.prefs=ALL-UNNAMED,-Xmx2048m,-Dfile.encoding=UTF-8,-Duser.country=IE,-Duser.language=en,-Duser.variant]
+2021-06-01T19:28:06.333+0100 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Storing daemon address: [2be1bbfc-7c83-46e4-85e1-7e509ac060ff port:62404, addresses:[localhost/127.0.0.1]], context: DefaultDaemonContext[uid=6c80802a-9b95-46d8-be7d-b58c77a0853d,javaHome=C:\Users\farom\AppData\Local\JetBrains\Toolbox\apps\AndroidStudio\ch-0\202.7351085\jre,daemonRegistryDir=C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\daemon,pid=11148,idleTimeout=10800000,priority=NORMAL,daemonOpts=--add-opens,java.base/java.util=ALL-UNNAMED,--add-opens,java.base/java.lang=ALL-UNNAMED,--add-opens,java.base/java.lang.invoke=ALL-UNNAMED,--add-opens,java.prefs/java.util.prefs=ALL-UNNAMED,-Xmx2048m,-Dfile.encoding=UTF-8,-Duser.country=IE,-Duser.language=en,-Duser.variant]
+2021-06-01T19:28:06.358+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2021-06-01T19:28:06.367+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2021-06-01T19:28:06.381+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2021-06-01T19:28:06.383+0100 [LIFECYCLE] [org.gradle.launcher.daemon.server.Daemon] Daemon server started.
+2021-06-01T19:28:06.386+0100 [DEBUG] [org.gradle.launcher.daemon.bootstrap.DaemonStartupCommunication] Completed writing the daemon greeting. Closing streams...
+2021-06-01T19:28:06.401+0100 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] stopOnExpiration() called on daemon
+2021-06-01T19:28:06.403+0100 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] awaitExpiration() called on daemon
+2021-06-01T19:28:06.405+0100 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2021-06-01T19:28:06.420+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpIncomingConnector] Accepted connection from /127.0.0.1:62405 to /127.0.0.1:62404.
+2021-06-01T19:28:06.630+0100 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 19: received class org.gradle.launcher.daemon.protocol.Build
+2021-06-01T19:28:06.631+0100 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 19: Received non-IO message from client: Build{id=6c7d40ae-1569-44d1-a85a-29b33d1ef64b, currentDir=C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project}
+2021-06-01T19:28:06.632+0100 [INFO] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received command: Build{id=6c7d40ae-1569-44d1-a85a-29b33d1ef64b, currentDir=C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project}.
+2021-06-01T19:28:06.632+0100 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Starting executing command: Build{id=6c7d40ae-1569-44d1-a85a-29b33d1ef64b, currentDir=C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project} with connection: socket connection from /127.0.0.1:62404 to /127.0.0.1:62405.
+2021-06-01T19:28:06.639+0100 [ERROR] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: started DaemonCommandExecution[command = Build{id=6c7d40ae-1569-44d1-a85a-29b33d1ef64b, currentDir=C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:62404 to /127.0.0.1:62405] after 0.0 minutes of idle
+2021-06-01T19:28:06.640+0100 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Marking the daemon as busy, address: [2be1bbfc-7c83-46e4-85e1-7e509ac060ff port:62404, addresses:[localhost/127.0.0.1]]
+2021-06-01T19:28:06.640+0100 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [2be1bbfc-7c83-46e4-85e1-7e509ac060ff port:62404, addresses:[localhost/127.0.0.1]]
+2021-06-01T19:28:06.644+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2021-06-01T19:28:06.646+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2021-06-01T19:28:06.651+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2021-06-01T19:28:06.653+0100 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] resetting idle timer
+2021-06-01T19:28:06.654+0100 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2021-06-01T19:28:06.656+0100 [INFO] [org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy] Daemon is about to start building Build{id=6c7d40ae-1569-44d1-a85a-29b33d1ef64b, currentDir=C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project}. Dispatching build started information...
+2021-06-01T19:28:06.656+0100 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 21: dispatching org.gradle.launcher.daemon.protocol.BuildStarted@1abb0744
+2021-06-01T19:28:06.664+0100 [DEBUG] [org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment] Configuring env variables: [configsetroot, GOOGLE_DEFAULT_CLIENT_ID, USERDOMAIN_ROAMINGPROFILE, PROCESSOR_LEVEL, MSMPI_LIB32, SESSIONNAME, ALLUSERSPROFILE, PROCESSOR_ARCHITECTURE, GOOGLE_DEFAULT_CLIENT_SECRET, PSModulePath, SystemDrive, MSMPI_INC, USERNAME, ProgramFiles(x86), FPS_BROWSER_USER_PROFILE_STRING, PATHEXT, DriverData, MSMPI_LIB64, ProgramData, ProgramW6432, HOMEPATH, PROCESSOR_IDENTIFIER, PUBLIC, ProgramFiles, windir, =::, MSMPI_BENCHMARKS, OneDriveCommercial, LOCALAPPDATA, MSMPI_BIN, USERDOMAIN, FPS_BROWSER_APP_PROFILE_STRING, LOGONSERVER, JAVA_HOME, OneDrive, APPDATA, GOOGLE_API_KEY, VBOX_MSI_INSTALL_PATH, CommonProgramFiles, Path, OS, COMPUTERNAME, PROCESSOR_REVISION, CommonProgramW6432, ComSpec, TEMP, SystemRoot, USERPROFILE, HOMEDRIVE, TMP, CommonProgramFiles(x86), NUMBER_OF_PROCESSORS, IDEA_INITIAL_DIRECTORY]
+2021-06-01T19:28:06.668+0100 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 19: received class org.gradle.launcher.daemon.protocol.CloseInput
+2021-06-01T19:28:06.668+0100 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 19: Received IO message from client: org.gradle.launcher.daemon.protocol.CloseInput@48c96a44
+2021-06-01T19:28:06.679+0100 [DEBUG] [org.gradle.launcher.daemon.server.exec.LogToClient] About to start relaying all logs to the client via the connection.
+2021-06-01T19:28:06.680+0100 [INFO] [org.gradle.launcher.daemon.server.exec.LogToClient] The client will now receive all logging from the daemon (pid: 11148). The daemon log file: C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\daemon\6.7.1\daemon-11148.out.log
+2021-06-01T19:28:06.686+0100 [INFO] [org.gradle.launcher.daemon.server.exec.LogAndCheckHealth] Starting build in new daemon [memory: 2.1 GB]
+2021-06-01T19:28:06.692+0100 [INFO] [org.gradle.launcher.daemon.server.exec.ForwardClientInput] Closing daemon's stdin at end of input.
+2021-06-01T19:28:06.692+0100 [INFO] [org.gradle.launcher.daemon.server.exec.ForwardClientInput] The daemon will no longer process any standard input.
+2021-06-01T19:28:06.703+0100 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has started executing the build.
+2021-06-01T19:28:06.704+0100 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] Executing build with daemon context: DefaultDaemonContext[uid=6c80802a-9b95-46d8-be7d-b58c77a0853d,javaHome=C:\Users\farom\AppData\Local\JetBrains\Toolbox\apps\AndroidStudio\ch-0\202.7351085\jre,daemonRegistryDir=C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\daemon,pid=11148,idleTimeout=10800000,priority=NORMAL,daemonOpts=--add-opens,java.base/java.util=ALL-UNNAMED,--add-opens,java.base/java.lang=ALL-UNNAMED,--add-opens,java.base/java.lang.invoke=ALL-UNNAMED,--add-opens,java.prefs/java.util.prefs=ALL-UNNAMED,-Xmx2048m,-Dfile.encoding=UTF-8,-Duser.country=IE,-Duser.language=en,-Duser.variant]
+AGPBI: {"kind":"warning","text":"Please remove usages of `jcenter()` Maven repository from your build scripts and migrate your build to other Maven repositories.\nThis repository is deprecated and it will be shut down in the future.\nSee http://developer.android.com/r/tools/jcenter-end-of-service for more information.\nCurrently detected usages in: root project 'Software_Developement_Project', project ':app'","sources":[{}]}
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:dataBindingMergeDependencyArtifactsDebug'.
+> A build operation failed.
+      java.io.UncheckedIOException: java.io.IOException: Unable to delete directory 'C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\transforms-2\files-2.1\9feb6959001be92bd2244dcada9857da'
+    Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+    - C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\transforms-2\files-2.1\9feb6959001be92bd2244dcada9857da\material-1.3.0\res\values-nl
+    - C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\transforms-2\files-2.1\9feb6959001be92bd2244dcada9857da\material-1.3.0\res
+    - C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\transforms-2\files-2.1\9feb6959001be92bd2244dcada9857da\material-1.3.0
+   > java.io.UncheckedIOException: java.io.IOException: Unable to delete directory 'C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\transforms-2\files-2.1\9feb6959001be92bd2244dcada9857da'
+       Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+       - C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\transforms-2\files-2.1\9feb6959001be92bd2244dcada9857da\material-1.3.0\res\values-nl
+       - C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\transforms-2\files-2.1\9feb6959001be92bd2244dcada9857da\material-1.3.0\res
+       - C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\transforms-2\files-2.1\9feb6959001be92bd2244dcada9857da\material-1.3.0
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 1m 24s
+1 actionable task: 1 executed
+2021-06-01T19:29:17.930+0100 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has finished executing the build.
+2021-06-01T19:29:17.947+0100 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2021-06-01T19:29:17.948+0100 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: finished waiting for DaemonCommandExecution[command = Build{id=6c7d40ae-1569-44d1-a85a-29b33d1ef64b, currentDir=C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:62404 to /127.0.0.1:62405]. Result org.gradle.launcher.daemon.server.DaemonStateCoordinator@2156f021 with state Busy
+2021-06-01T19:29:17.949+0100 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: completed DaemonCommandExecution[command = Build{id=6c7d40ae-1569-44d1-a85a-29b33d1ef64b, currentDir=C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:62404 to /127.0.0.1:62405]
+2021-06-01T19:29:17.949+0100 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] resetting idle timer
+2021-06-01T19:29:17.949+0100 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Marking the daemon as idle, address: [2be1bbfc-7c83-46e4-85e1-7e509ac060ff port:62404, addresses:[localhost/127.0.0.1]]
+2021-06-01T19:29:17.950+0100 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [2be1bbfc-7c83-46e4-85e1-7e509ac060ff port:62404, addresses:[localhost/127.0.0.1]]
+2021-06-01T19:29:17.956+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2021-06-01T19:29:17.973+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2021-06-01T19:29:17.978+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2021-06-01T19:29:17.980+0100 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2021-06-01T19:29:17.981+0100 [DEBUG] [org.gradle.launcher.daemon.server.exec.ReturnResult] Daemon is dispatching the build result: Success[value=org.gradle.launcher.exec.BuildActionResult@533231bd]
+2021-06-01T19:29:17.981+0100 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 18: dispatching Success[value=org.gradle.launcher.exec.BuildActionResult@533231bd]
+2021-06-01T19:29:18.026+0100 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Finishing executing command: Build{id=6c7d40ae-1569-44d1-a85a-29b33d1ef64b, currentDir=C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project}
+2021-06-01T19:29:18.099+0100 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 19: received class org.gradle.launcher.daemon.protocol.Finished
+2021-06-01T19:29:18.100+0100 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 19: Received non-IO message from client: org.gradle.launcher.daemon.protocol.Finished@32192ab3
+2021-06-01T19:29:18.101+0100 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received finished message: org.gradle.launcher.daemon.protocol.Finished@32192ab3
+2021-06-01T19:29:18.101+0100 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 18: stopping connection
+2021-06-01T19:29:18.104+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.SocketConnection] Discarding EOFException: java.io.EOFException
+2021-06-01T19:29:18.105+0100 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 19: received null
+2021-06-01T19:29:18.105+0100 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 19: Received end-of-input from client.
+2021-06-01T19:29:18.106+0100 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 18: stopping connection
+2021-06-01T19:29:24.003+0100 [DEBUG] [org.gradle.process.internal.health.memory.DefaultMemoryManager] 415486361 memory requested, 374243328 free
+2021-06-01T19:29:24.008+0100 [DEBUG] [org.gradle.workers.internal.WorkerDaemonExpiration] Will attempt to release 396 of memory
+2021-06-01T19:29:24.013+0100 [DEBUG] [org.gradle.process.internal.health.memory.DefaultMemoryManager] 415486361 memory requested, 0 released, 374243328 free
+2021-06-01T19:29:26.452+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2021-06-01T19:29:26.456+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2021-06-01T19:29:26.478+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2021-06-01T19:29:26.494+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2021-06-01T19:29:26.495+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2021-06-01T19:29:26.496+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2021-06-01T19:29:28.967+0100 [DEBUG] [org.gradle.process.internal.health.memory.DefaultMemoryManager] 415486361 memory requested, 306913280 free
+2021-06-01T19:29:28.968+0100 [DEBUG] [org.gradle.workers.internal.WorkerDaemonExpiration] Will attempt to release 396 of memory
+2021-06-01T19:29:28.971+0100 [DEBUG] [org.gradle.process.internal.health.memory.DefaultMemoryManager] 415486361 memory requested, 0 released, 306913280 free
+2021-06-01T19:29:33.958+0100 [DEBUG] [org.gradle.process.internal.health.memory.DefaultMemoryManager] 415486361 memory requested, 354975744 free
+2021-06-01T19:29:33.958+0100 [DEBUG] [org.gradle.workers.internal.WorkerDaemonExpiration] Will attempt to release 396 of memory
+2021-06-01T19:29:33.959+0100 [DEBUG] [org.gradle.process.internal.health.memory.DefaultMemoryManager] 415486361 memory requested, 0 released, 354975744 free
+2021-06-01T19:29:36.882+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2021-06-01T19:29:36.883+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2021-06-01T19:29:36.888+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2021-06-01T19:29:36.892+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2021-06-01T19:29:36.894+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2021-06-01T19:29:36.897+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2021-06-01T19:29:36.911+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2021-06-01T19:29:36.913+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2021-06-01T19:29:36.915+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2021-06-01T19:29:38.987+0100 [DEBUG] [org.gradle.process.internal.health.memory.DefaultMemoryManager] 415486361 memory requested, 273698816 free
+2021-06-01T19:29:38.988+0100 [DEBUG] [org.gradle.workers.internal.WorkerDaemonExpiration] Will attempt to release 396 of memory
+2021-06-01T19:29:38.988+0100 [DEBUG] [org.gradle.process.internal.health.memory.DefaultMemoryManager] 415486361 memory requested, 0 released, 273698816 free
+2021-06-01T19:29:46.977+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2021-06-01T19:29:46.978+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2021-06-01T19:29:46.979+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2021-06-01T19:29:46.986+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2021-06-01T19:29:46.987+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2021-06-01T19:29:47.042+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2021-06-01T19:29:47.094+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2021-06-01T19:29:47.108+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2021-06-01T19:29:47.111+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2021-06-01T19:29:53.931+0100 [DEBUG] [org.gradle.process.internal.health.memory.DefaultMemoryManager] 415486361 memory requested, 387436544 free
+2021-06-01T19:29:53.932+0100 [DEBUG] [org.gradle.workers.internal.WorkerDaemonExpiration] Will attempt to release 396 of memory
+2021-06-01T19:29:53.932+0100 [DEBUG] [org.gradle.process.internal.health.memory.DefaultMemoryManager] 415486361 memory requested, 0 released, 387436544 free
+2021-06-01T19:29:56.722+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2021-06-01T19:29:56.722+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2021-06-01T19:29:56.723+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2021-06-01T19:29:56.801+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2021-06-01T19:29:56.807+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2021-06-01T19:29:56.808+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2021-06-01T19:29:56.813+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2021-06-01T19:29:56.814+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2021-06-01T19:29:56.815+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2021-06-01T19:29:58.922+0100 [DEBUG] [org.gradle.process.internal.health.memory.DefaultMemoryManager] 415486361 memory requested, 359067648 free
+2021-06-01T19:29:58.926+0100 [DEBUG] [org.gradle.workers.internal.WorkerDaemonExpiration] Will attempt to release 396 of memory
+2021-06-01T19:29:58.927+0100 [DEBUG] [org.gradle.process.internal.health.memory.DefaultMemoryManager] 415486361 memory requested, 0 released, 359067648 free
+2021-06-01T19:30:06.410+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2021-06-01T19:30:06.410+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2021-06-01T19:30:06.411+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2021-06-01T19:30:06.415+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2021-06-01T19:30:06.415+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2021-06-01T19:30:06.416+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2021-06-01T19:30:06.418+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2021-06-01T19:30:06.418+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2021-06-01T19:30:06.419+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2021-06-01T19:30:11.485+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpIncomingConnector] Accepted connection from /127.0.0.1:62439 to /127.0.0.1:62404.
+2021-06-01T19:30:11.574+0100 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 147: received class org.gradle.launcher.daemon.protocol.Build
+2021-06-01T19:30:11.575+0100 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 147: Received non-IO message from client: Build{id=42b50ae7-2562-44b0-a53e-d04065cb0eab, currentDir=C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project}
+2021-06-01T19:30:11.576+0100 [INFO] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received command: Build{id=42b50ae7-2562-44b0-a53e-d04065cb0eab, currentDir=C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project}.
+2021-06-01T19:30:11.578+0100 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Starting executing command: Build{id=42b50ae7-2562-44b0-a53e-d04065cb0eab, currentDir=C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project} with connection: socket connection from /127.0.0.1:62404 to /127.0.0.1:62439.
+2021-06-01T19:30:11.587+0100 [ERROR] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: started DaemonCommandExecution[command = Build{id=42b50ae7-2562-44b0-a53e-d04065cb0eab, currentDir=C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:62404 to /127.0.0.1:62439] after 0.0 minutes of idle
+2021-06-01T19:30:11.590+0100 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Marking the daemon as busy, address: [2be1bbfc-7c83-46e4-85e1-7e509ac060ff port:62404, addresses:[localhost/127.0.0.1]]
+2021-06-01T19:30:11.590+0100 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [2be1bbfc-7c83-46e4-85e1-7e509ac060ff port:62404, addresses:[localhost/127.0.0.1]]
+2021-06-01T19:30:11.593+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2021-06-01T19:30:11.595+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2021-06-01T19:30:11.601+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2021-06-01T19:30:11.602+0100 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] resetting idle timer
+2021-06-01T19:30:11.604+0100 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2021-06-01T19:30:11.604+0100 [INFO] [org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy] Daemon is about to start building Build{id=42b50ae7-2562-44b0-a53e-d04065cb0eab, currentDir=C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project}. Dispatching build started information...
+2021-06-01T19:30:11.606+0100 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 21: dispatching org.gradle.launcher.daemon.protocol.BuildStarted@117306aa
+2021-06-01T19:30:11.610+0100 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 147: received class org.gradle.launcher.daemon.protocol.CloseInput
+2021-06-01T19:30:11.610+0100 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 147: Received IO message from client: org.gradle.launcher.daemon.protocol.CloseInput@7713d9b9
+2021-06-01T19:30:11.619+0100 [DEBUG] [org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment] Configuring env variables: [configsetroot, GOOGLE_DEFAULT_CLIENT_ID, USERDOMAIN_ROAMINGPROFILE, PROCESSOR_LEVEL, MSMPI_LIB32, SESSIONNAME, ALLUSERSPROFILE, PROCESSOR_ARCHITECTURE, GOOGLE_DEFAULT_CLIENT_SECRET, PSModulePath, SystemDrive, MSMPI_INC, USERNAME, ProgramFiles(x86), FPS_BROWSER_USER_PROFILE_STRING, PATHEXT, DriverData, MSMPI_LIB64, ProgramData, ProgramW6432, HOMEPATH, PROCESSOR_IDENTIFIER, PUBLIC, ProgramFiles, windir, =::, MSMPI_BENCHMARKS, OneDriveCommercial, LOCALAPPDATA, MSMPI_BIN, USERDOMAIN, FPS_BROWSER_APP_PROFILE_STRING, LOGONSERVER, JAVA_HOME, OneDrive, APPDATA, GOOGLE_API_KEY, VBOX_MSI_INSTALL_PATH, CommonProgramFiles, Path, OS, COMPUTERNAME, PROCESSOR_REVISION, CommonProgramW6432, ComSpec, TEMP, SystemRoot, USERPROFILE, HOMEDRIVE, TMP, CommonProgramFiles(x86), NUMBER_OF_PROCESSORS, IDEA_INITIAL_DIRECTORY]
+2021-06-01T19:30:11.631+0100 [DEBUG] [org.gradle.launcher.daemon.server.exec.LogToClient] About to start relaying all logs to the client via the connection.
+2021-06-01T19:30:11.632+0100 [INFO] [org.gradle.launcher.daemon.server.exec.LogToClient] The client will now receive all logging from the daemon (pid: 11148). The daemon log file: C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\daemon\6.7.1\daemon-11148.out.log
+2021-06-01T19:30:11.641+0100 [INFO] [org.gradle.launcher.daemon.server.exec.LogAndCheckHealth] Starting 2nd build in daemon [uptime: 2 mins 7.968 secs, performance: 99%]
+2021-06-01T19:30:11.642+0100 [INFO] [org.gradle.launcher.daemon.server.exec.ForwardClientInput] Closing daemon's stdin at end of input.
+2021-06-01T19:30:11.643+0100 [INFO] [org.gradle.launcher.daemon.server.exec.ForwardClientInput] The daemon will no longer process any standard input.
+2021-06-01T19:30:11.646+0100 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has started executing the build.
+2021-06-01T19:30:11.647+0100 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] Executing build with daemon context: DefaultDaemonContext[uid=6c80802a-9b95-46d8-be7d-b58c77a0853d,javaHome=C:\Users\farom\AppData\Local\JetBrains\Toolbox\apps\AndroidStudio\ch-0\202.7351085\jre,daemonRegistryDir=C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\daemon,pid=11148,idleTimeout=10800000,priority=NORMAL,daemonOpts=--add-opens,java.base/java.util=ALL-UNNAMED,--add-opens,java.base/java.lang=ALL-UNNAMED,--add-opens,java.base/java.lang.invoke=ALL-UNNAMED,--add-opens,java.prefs/java.util.prefs=ALL-UNNAMED,-Xmx2048m,-Dfile.encoding=UTF-8,-Duser.country=IE,-Duser.language=en,-Duser.variant]
+AGPBI: {"kind":"warning","text":"Please remove usages of `jcenter()` Maven repository from your build scripts and migrate your build to other Maven repositories.\nThis repository is deprecated and it will be shut down in the future.\nSee http://developer.android.com/r/tools/jcenter-end-of-service for more information.\nCurrently detected usages in: root project 'Software_Developement_Project', project ':app'","sources":[{}]}
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:dataBindingMergeDependencyArtifactsDebug'.
+> A build operation failed.
+      java.io.UncheckedIOException: java.io.IOException: Unable to delete directory 'C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\transforms-2\files-2.1\9feb6959001be92bd2244dcada9857da'
+    Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+    - C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\transforms-2\files-2.1\9feb6959001be92bd2244dcada9857da\material-1.3.0\res\values-nl
+    - C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\transforms-2\files-2.1\9feb6959001be92bd2244dcada9857da\material-1.3.0\res
+    - C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\transforms-2\files-2.1\9feb6959001be92bd2244dcada9857da\material-1.3.0
+   > java.io.UncheckedIOException: java.io.IOException: Unable to delete directory 'C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\transforms-2\files-2.1\9feb6959001be92bd2244dcada9857da'
+       Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+       - C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\transforms-2\files-2.1\9feb6959001be92bd2244dcada9857da\material-1.3.0\res\values-nl
+       - C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\transforms-2\files-2.1\9feb6959001be92bd2244dcada9857da\material-1.3.0\res
+       - C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\transforms-2\files-2.1\9feb6959001be92bd2244dcada9857da\material-1.3.0
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 12s
+1 actionable task: 1 executed
+2021-06-01T19:30:24.396+0100 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has finished executing the build.
+2021-06-01T19:30:24.413+0100 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: finished waiting for DaemonCommandExecution[command = Build{id=42b50ae7-2562-44b0-a53e-d04065cb0eab, currentDir=C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:62404 to /127.0.0.1:62439]. Result org.gradle.launcher.daemon.server.DaemonStateCoordinator@2156f021 with state Busy
+2021-06-01T19:30:24.414+0100 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: completed DaemonCommandExecution[command = Build{id=42b50ae7-2562-44b0-a53e-d04065cb0eab, currentDir=C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:62404 to /127.0.0.1:62439]
+2021-06-01T19:30:24.414+0100 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] resetting idle timer
+2021-06-01T19:30:24.414+0100 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Marking the daemon as idle, address: [2be1bbfc-7c83-46e4-85e1-7e509ac060ff port:62404, addresses:[localhost/127.0.0.1]]
+2021-06-01T19:30:24.414+0100 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [2be1bbfc-7c83-46e4-85e1-7e509ac060ff port:62404, addresses:[localhost/127.0.0.1]]
+2021-06-01T19:30:24.420+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2021-06-01T19:30:24.421+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2021-06-01T19:30:24.425+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2021-06-01T19:30:24.428+0100 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2021-06-01T19:30:24.428+0100 [DEBUG] [org.gradle.launcher.daemon.server.exec.ReturnResult] Daemon is dispatching the build result: Success[value=org.gradle.launcher.exec.BuildActionResult@3edc2801]
+2021-06-01T19:30:24.429+0100 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 18: dispatching Success[value=org.gradle.launcher.exec.BuildActionResult@3edc2801]
+2021-06-01T19:30:24.453+0100 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Finishing executing command: Build{id=42b50ae7-2562-44b0-a53e-d04065cb0eab, currentDir=C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project}
+2021-06-01T19:30:24.453+0100 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 147: received class org.gradle.launcher.daemon.protocol.Finished
+2021-06-01T19:30:24.454+0100 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 147: Received non-IO message from client: org.gradle.launcher.daemon.protocol.Finished@79d4392b
+2021-06-01T19:30:24.455+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.SocketConnection] Discarding EOFException: java.io.EOFException
+2021-06-01T19:30:24.455+0100 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 147: received null
+2021-06-01T19:30:24.455+0100 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 147: Received end-of-input from client.
+2021-06-01T19:30:24.485+0100 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received finished message: null
+2021-06-01T19:30:24.485+0100 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 18: stopping connection
+2021-06-01T19:30:24.500+0100 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 18: stopping connection
+2021-06-01T19:30:26.421+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2021-06-01T19:30:26.424+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2021-06-01T19:30:26.425+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2021-06-01T19:30:26.432+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2021-06-01T19:30:26.433+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2021-06-01T19:30:26.434+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2021-06-01T19:30:28.931+0100 [DEBUG] [org.gradle.process.internal.health.memory.DefaultMemoryManager] 415486361 memory requested, 371957760 free
+2021-06-01T19:30:28.932+0100 [DEBUG] [org.gradle.workers.internal.WorkerDaemonExpiration] Will attempt to release 396 of memory
+2021-06-01T19:30:28.932+0100 [DEBUG] [org.gradle.process.internal.health.memory.DefaultMemoryManager] 415486361 memory requested, 0 released, 371957760 free
+2021-06-01T19:30:33.927+0100 [DEBUG] [org.gradle.process.internal.health.memory.DefaultMemoryManager] 415486361 memory requested, 297607168 free
+2021-06-01T19:30:33.927+0100 [DEBUG] [org.gradle.workers.internal.WorkerDaemonExpiration] Will attempt to release 396 of memory
+2021-06-01T19:30:33.927+0100 [DEBUG] [org.gradle.process.internal.health.memory.DefaultMemoryManager] 415486361 memory requested, 0 released, 297607168 free
+2021-06-01T19:30:36.422+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2021-06-01T19:30:36.422+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2021-06-01T19:30:36.423+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2021-06-01T19:30:36.426+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2021-06-01T19:30:36.426+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2021-06-01T19:30:36.427+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2021-06-01T19:30:36.430+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2021-06-01T19:30:36.431+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2021-06-01T19:30:36.432+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2021-06-01T19:30:38.932+0100 [DEBUG] [org.gradle.process.internal.health.memory.DefaultMemoryManager] 415486361 memory requested, 310726656 free
+2021-06-01T19:30:38.933+0100 [DEBUG] [org.gradle.workers.internal.WorkerDaemonExpiration] Will attempt to release 396 of memory
+2021-06-01T19:30:38.933+0100 [DEBUG] [org.gradle.process.internal.health.memory.DefaultMemoryManager] 415486361 memory requested, 0 released, 310726656 free
+2021-06-01T19:30:43.939+0100 [DEBUG] [org.gradle.process.internal.health.memory.DefaultMemoryManager] 415486361 memory requested, 296886272 free
+2021-06-01T19:30:43.939+0100 [DEBUG] [org.gradle.workers.internal.WorkerDaemonExpiration] Will attempt to release 396 of memory
+2021-06-01T19:30:43.939+0100 [DEBUG] [org.gradle.process.internal.health.memory.DefaultMemoryManager] 415486361 memory requested, 0 released, 296886272 free
+2021-06-01T19:30:46.468+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2021-06-01T19:30:46.470+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2021-06-01T19:30:46.471+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2021-06-01T19:30:46.477+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2021-06-01T19:30:46.482+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2021-06-01T19:30:46.485+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2021-06-01T19:30:46.489+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2021-06-01T19:30:46.489+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2021-06-01T19:30:46.490+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2021-06-01T19:30:48.928+0100 [DEBUG] [org.gradle.process.internal.health.memory.DefaultMemoryManager] 415486361 memory requested, 302391296 free
+2021-06-01T19:30:48.929+0100 [DEBUG] [org.gradle.workers.internal.WorkerDaemonExpiration] Will attempt to release 396 of memory
+2021-06-01T19:30:48.929+0100 [DEBUG] [org.gradle.process.internal.health.memory.DefaultMemoryManager] 415486361 memory requested, 0 released, 302391296 free
+2021-06-01T19:30:53.941+0100 [DEBUG] [org.gradle.process.internal.health.memory.DefaultMemoryManager] 415486361 memory requested, 276066304 free
+2021-06-01T19:30:53.941+0100 [DEBUG] [org.gradle.workers.internal.WorkerDaemonExpiration] Will attempt to release 396 of memory
+2021-06-01T19:30:53.941+0100 [DEBUG] [org.gradle.process.internal.health.memory.DefaultMemoryManager] 415486361 memory requested, 0 released, 276066304 free
+2021-06-01T19:30:56.589+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2021-06-01T19:30:56.591+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2021-06-01T19:30:56.592+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2021-06-01T19:30:56.600+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2021-06-01T19:30:56.601+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2021-06-01T19:30:56.603+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2021-06-01T19:30:56.607+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2021-06-01T19:30:56.608+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2021-06-01T19:30:56.609+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2021-06-01T19:30:58.937+0100 [DEBUG] [org.gradle.process.internal.health.memory.DefaultMemoryManager] 415486361 memory requested, 366694400 free
+2021-06-01T19:30:58.938+0100 [DEBUG] [org.gradle.workers.internal.WorkerDaemonExpiration] Will attempt to release 396 of memory
+2021-06-01T19:30:58.938+0100 [DEBUG] [org.gradle.process.internal.health.memory.DefaultMemoryManager] 415486361 memory requested, 0 released, 366694400 free
+2021-06-01T19:31:03.933+0100 [DEBUG] [org.gradle.process.internal.health.memory.DefaultMemoryManager] 415486361 memory requested, 312684544 free
+2021-06-01T19:31:03.933+0100 [DEBUG] [org.gradle.workers.internal.WorkerDaemonExpiration] Will attempt to release 396 of memory
+2021-06-01T19:31:03.933+0100 [DEBUG] [org.gradle.process.internal.health.memory.DefaultMemoryManager] 415486361 memory requested, 0 released, 312684544 free
+2021-06-01T19:31:06.423+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2021-06-01T19:31:06.425+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2021-06-01T19:31:06.426+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2021-06-01T19:31:06.428+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2021-06-01T19:31:06.429+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2021-06-01T19:31:06.430+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2021-06-01T19:31:06.435+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2021-06-01T19:31:06.436+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2021-06-01T19:31:06.437+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2021-06-01T19:31:06.445+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpIncomingConnector] Accepted connection from /127.0.0.1:62453 to /127.0.0.1:62404.
+2021-06-01T19:31:06.464+0100 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 268: received class org.gradle.launcher.daemon.protocol.StopWhenIdle
+2021-06-01T19:31:06.465+0100 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 268: Received non-IO message from client: StopWhenIdle[id=bbe04ccd-c34b-4fb8-a29d-172be982838d]
+2021-06-01T19:31:06.465+0100 [INFO] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received command: StopWhenIdle[id=bbe04ccd-c34b-4fb8-a29d-172be982838d].
+2021-06-01T19:31:06.466+0100 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Starting executing command: StopWhenIdle[id=bbe04ccd-c34b-4fb8-a29d-172be982838d] with connection: socket connection from /127.0.0.1:62404 to /127.0.0.1:62453.
+2021-06-01T19:31:06.467+0100 [DEBUG] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Storing daemon stop event: stop command received
+2021-06-01T19:31:06.475+0100 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Storing daemon stop event with timestamp 1622572266461
+2021-06-01T19:31:06.479+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2021-06-01T19:31:06.480+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2021-06-01T19:31:06.484+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2021-06-01T19:31:06.485+0100 [LIFECYCLE] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Daemon will be stopped at the end of the build stop command received
+2021-06-01T19:31:06.485+0100 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Marking daemon stopped due to stop command received. The daemon is running a build: false
+2021-06-01T19:31:06.486+0100 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon has stopped.
+2021-06-01T19:31:06.486+0100 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] stop() called on daemon
+2021-06-01T19:31:06.486+0100 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 18: dispatching Success[value=null]
+2021-06-01T19:31:06.486+0100 [INFO] [org.gradle.launcher.daemon.server.Daemon] Stop requested. Daemon is removing its presence from the registry...
+2021-06-01T19:31:06.487+0100 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Finishing executing command: StopWhenIdle[id=bbe04ccd-c34b-4fb8-a29d-172be982838d]
+2021-06-01T19:31:06.488+0100 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 268: received class org.gradle.launcher.daemon.protocol.Finished
+2021-06-01T19:31:06.488+0100 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 268: Received non-IO message from client: org.gradle.launcher.daemon.protocol.Finished@6beb1e2f
+2021-06-01T19:31:06.489+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.SocketConnection] Discarding EOFException: java.io.EOFException
+2021-06-01T19:31:06.489+0100 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 268: received null
+2021-06-01T19:31:06.489+0100 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 268: Received end-of-input from client.
+2021-06-01T19:31:06.490+0100 [DEBUG] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Removing our presence to clients, eg. removing this address from the registry: [2be1bbfc-7c83-46e4-85e1-7e509ac060ff port:62404, addresses:[localhost/127.0.0.1]]
+2021-06-01T19:31:06.490+0100 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Removing daemon address: [2be1bbfc-7c83-46e4-85e1-7e509ac060ff port:62404, addresses:[localhost/127.0.0.1]]
+2021-06-01T19:31:06.490+0100 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received finished message: null
+2021-06-01T19:31:06.491+0100 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 18: stopping connection
+2021-06-01T19:31:06.496+0100 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 18: stopping connection
+2021-06-01T19:31:06.499+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2021-06-01T19:31:06.502+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2021-06-01T19:31:06.510+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2021-06-01T19:31:06.514+0100 [DEBUG] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Address removed from registry.
+2021-06-01T19:31:06.641+0100 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for jars (C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\jars-8)
+2021-06-01T19:31:06.641+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on jars (C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\jars-8).
+2021-06-01T19:31:06.644+0100 [DEBUG] [org.gradle.cache.internal.DefaultPersistentDirectoryStore] jars (C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\jars-8) has last been fully cleaned up 29 hours ago
+2021-06-01T19:31:06.658+0100 [DEBUG] [org.gradle.cache.internal.AbstractCacheCleanup] jars (C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\jars-8) cleanup deleted 0 files/directories.
+2021-06-01T19:31:06.660+0100 [INFO] [org.gradle.cache.internal.LeastRecentlyUsedCacheCleanup] jars (C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\jars-8) removing files not accessed on or after Tue May 25 19:28:07 BST 2021.
+2021-06-01T19:31:06.668+0100 [DEBUG] [org.gradle.cache.internal.AbstractCacheCleanup] jars (C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\jars-8) cleanup deleted 0 files/directories.
+2021-06-01T19:31:06.673+0100 [INFO] [org.gradle.cache.internal.DefaultPersistentDirectoryStore] jars (C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\jars-8) cleaned up in 0.029 secs.
+2021-06-01T19:31:06.675+0100 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for file content cache (C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\6.7.1\fileContent)
+2021-06-01T19:31:06.676+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on file content cache (C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\6.7.1\fileContent).
+2021-06-01T19:31:06.686+0100 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for Artifact transforms cache (C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\transforms-2)
+2021-06-01T19:31:06.687+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on Artifact transforms cache (C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\transforms-2).
+2021-06-01T19:31:06.689+0100 [DEBUG] [org.gradle.cache.internal.DefaultPersistentDirectoryStore] Artifact transforms cache (C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\transforms-2) has last been fully cleaned up 29 hours ago
+2021-06-01T19:31:06.693+0100 [INFO] [org.gradle.cache.internal.LeastRecentlyUsedCacheCleanup] Artifact transforms cache (C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\transforms-2) [subdir: C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\transforms-2\files-2.1] removing files not accessed on or after Tue May 25 19:28:10 BST 2021.
+2021-06-01T19:31:07.109+0100 [INFO] [org.gradle.cache.internal.LoggingEvictionListener] Cache entries evicted. In-memory cache of C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\journal-1\file-access.bin: Size{2267} MaxSize{2400}, CacheStats{hitCount=221, missCount=1460, loadSuccessCount=1461, loadExceptionCount=0, totalLoadTime=232189700, evictionCount=1} 
+Performance may suffer from in-memory cache misses. Increase max heap size of Gradle build process to reduce cache misses.
+2021-06-01T19:31:07.171+0100 [INFO] [org.gradle.cache.internal.LoggingEvictionListener] Cache entries evicted. In-memory cache of C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\journal-1\file-access.bin: Size{2400} MaxSize{2400}, CacheStats{hitCount=259, missCount=1833, loadSuccessCount=1834, loadExceptionCount=0, totalLoadTime=278463500, evictionCount=241} 
+Performance may suffer from in-memory cache misses. Increase max heap size of Gradle build process to reduce cache misses.
+2021-06-01T19:31:07.216+0100 [INFO] [org.gradle.cache.internal.LoggingEvictionListener] Cache entries evicted. In-memory cache of C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\journal-1\file-access.bin: Size{2400} MaxSize{2400}, CacheStats{hitCount=271, missCount=2073, loadSuccessCount=2074, loadExceptionCount=0, totalLoadTime=311772300, evictionCount=481} 
+Performance may suffer from in-memory cache misses. Increase max heap size of Gradle build process to reduce cache misses.
+2021-06-01T19:31:07.240+0100 [INFO] [org.gradle.cache.internal.LoggingEvictionListener] Cache entries evicted. In-memory cache of C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\journal-1\file-access.bin: Size{2400} MaxSize{2400}, CacheStats{hitCount=271, missCount=2313, loadSuccessCount=2314, loadExceptionCount=0, totalLoadTime=328827200, evictionCount=721} 
+Performance may suffer from in-memory cache misses. Increase max heap size of Gradle build process to reduce cache misses.
+2021-06-01T19:31:07.271+0100 [INFO] [org.gradle.cache.internal.LoggingEvictionListener] Cache entries evicted. In-memory cache of C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\journal-1\file-access.bin: Size{2400} MaxSize{2400}, CacheStats{hitCount=271, missCount=2553, loadSuccessCount=2554, loadExceptionCount=0, totalLoadTime=351559000, evictionCount=961} 
+Performance may suffer from in-memory cache misses. Increase max heap size of Gradle build process to reduce cache misses.
+2021-06-01T19:31:07.294+0100 [INFO] [org.gradle.cache.internal.LoggingEvictionListener] Cache entries evicted. In-memory cache of C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\journal-1\file-access.bin: Size{2400} MaxSize{2400}, CacheStats{hitCount=271, missCount=2793, loadSuccessCount=2794, loadExceptionCount=0, totalLoadTime=367850800, evictionCount=1201} 
+Performance may suffer from in-memory cache misses. Increase max heap size of Gradle build process to reduce cache misses.
+2021-06-01T19:31:07.318+0100 [INFO] [org.gradle.cache.internal.LoggingEvictionListener] Cache entries evicted. In-memory cache of C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\journal-1\file-access.bin: Size{2400} MaxSize{2400}, CacheStats{hitCount=271, missCount=3033, loadSuccessCount=3034, loadExceptionCount=0, totalLoadTime=385267200, evictionCount=1441} 
+Performance may suffer from in-memory cache misses. Increase max heap size of Gradle build process to reduce cache misses.
+2021-06-01T19:31:07.354+0100 [INFO] [org.gradle.cache.internal.LoggingEvictionListener] Cache entries evicted. In-memory cache of C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\journal-1\file-access.bin: Size{2400} MaxSize{2400}, CacheStats{hitCount=271, missCount=3273, loadSuccessCount=3274, loadExceptionCount=0, totalLoadTime=410266100, evictionCount=1681} 
+Performance may suffer from in-memory cache misses. Increase max heap size of Gradle build process to reduce cache misses.
+2021-06-01T19:31:07.380+0100 [INFO] [org.gradle.cache.internal.LoggingEvictionListener] Cache entries evicted. In-memory cache of C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\journal-1\file-access.bin: Size{2400} MaxSize{2400}, CacheStats{hitCount=271, missCount=3513, loadSuccessCount=3514, loadExceptionCount=0, totalLoadTime=428460700, evictionCount=1921} 
+Performance may suffer from in-memory cache misses. Increase max heap size of Gradle build process to reduce cache misses.
+2021-06-01T19:31:07.437+0100 [INFO] [org.gradle.cache.internal.LoggingEvictionListener] Cache entries evicted. In-memory cache of C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\journal-1\file-access.bin: Size{2400} MaxSize{2400}, CacheStats{hitCount=271, missCount=3753, loadSuccessCount=3754, loadExceptionCount=0, totalLoadTime=475818000, evictionCount=2161} 
+Performance may suffer from in-memory cache misses. Increase max heap size of Gradle build process to reduce cache misses.
+2021-06-01T19:31:07.457+0100 [INFO] [org.gradle.cache.internal.LoggingEvictionListener] Cache entries evicted. In-memory cache of C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\journal-1\file-access.bin: Size{2400} MaxSize{2400}, CacheStats{hitCount=271, missCount=3993, loadSuccessCount=3994, loadExceptionCount=0, totalLoadTime=490224400, evictionCount=2401} 
+Performance may suffer from in-memory cache misses. Increase max heap size of Gradle build process to reduce cache misses.
+2021-06-01T19:31:07.477+0100 [INFO] [org.gradle.cache.internal.LoggingEvictionListener] Cache entries evicted. In-memory cache of C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\journal-1\file-access.bin: Size{2400} MaxSize{2400}, CacheStats{hitCount=271, missCount=4233, loadSuccessCount=4234, loadExceptionCount=0, totalLoadTime=505232500, evictionCount=2641} 
+Performance may suffer from in-memory cache misses. Increase max heap size of Gradle build process to reduce cache misses.
+2021-06-01T19:31:07.500+0100 [INFO] [org.gradle.cache.internal.LoggingEvictionListener] Cache entries evicted. In-memory cache of C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\journal-1\file-access.bin: Size{2400} MaxSize{2400}, CacheStats{hitCount=271, missCount=4473, loadSuccessCount=4474, loadExceptionCount=0, totalLoadTime=522154100, evictionCount=2881} 
+Performance may suffer from in-memory cache misses. Increase max heap size of Gradle build process to reduce cache misses.
+2021-06-01T19:31:07.526+0100 [INFO] [org.gradle.cache.internal.LoggingEvictionListener] Cache entries evicted. In-memory cache of C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\journal-1\file-access.bin: Size{2400} MaxSize{2400}, CacheStats{hitCount=271, missCount=4713, loadSuccessCount=4714, loadExceptionCount=0, totalLoadTime=541124800, evictionCount=3121} 
+Performance may suffer from in-memory cache misses. Increase max heap size of Gradle build process to reduce cache misses.
+2021-06-01T19:31:07.551+0100 [INFO] [org.gradle.cache.internal.LoggingEvictionListener] Cache entries evicted. In-memory cache of C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\journal-1\file-access.bin: Size{2400} MaxSize{2400}, CacheStats{hitCount=271, missCount=4953, loadSuccessCount=4954, loadExceptionCount=0, totalLoadTime=558968500, evictionCount=3361} 
+Performance may suffer from in-memory cache misses. Increase max heap size of Gradle build process to reduce cache misses.
+2021-06-01T19:31:07.574+0100 [INFO] [org.gradle.cache.internal.LoggingEvictionListener] Cache entries evicted. In-memory cache of C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\journal-1\file-access.bin: Size{2400} MaxSize{2400}, CacheStats{hitCount=271, missCount=5193, loadSuccessCount=5194, loadExceptionCount=0, totalLoadTime=575675800, evictionCount=3601} 
+Performance may suffer from in-memory cache misses. Increase max heap size of Gradle build process to reduce cache misses.
+2021-06-01T19:31:07.600+0100 [INFO] [org.gradle.cache.internal.LoggingEvictionListener] Cache entries evicted. In-memory cache of C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\journal-1\file-access.bin: Size{2400} MaxSize{2400}, CacheStats{hitCount=271, missCount=5433, loadSuccessCount=5434, loadExceptionCount=0, totalLoadTime=594871400, evictionCount=3841} 
+Performance may suffer from in-memory cache misses. Increase max heap size of Gradle build process to reduce cache misses.
+2021-06-01T19:31:07.622+0100 [INFO] [org.gradle.cache.internal.LoggingEvictionListener] Cache entries evicted. In-memory cache of C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\journal-1\file-access.bin: Size{2400} MaxSize{2400}, CacheStats{hitCount=271, missCount=5673, loadSuccessCount=5674, loadExceptionCount=0, totalLoadTime=612106700, evictionCount=4081} 
+Performance may suffer from in-memory cache misses. Increase max heap size of Gradle build process to reduce cache misses.
+2021-06-01T19:31:07.642+0100 [INFO] [org.gradle.cache.internal.LoggingEvictionListener] Cache entries evicted. In-memory cache of C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\journal-1\file-access.bin: Size{2400} MaxSize{2400}, CacheStats{hitCount=271, missCount=5913, loadSuccessCount=5914, loadExceptionCount=0, totalLoadTime=626625000, evictionCount=4321} 
+Performance may suffer from in-memory cache misses. Increase max heap size of Gradle build process to reduce cache misses.
+2021-06-01T19:31:07.667+0100 [INFO] [org.gradle.cache.internal.LoggingEvictionListener] Cache entries evicted. In-memory cache of C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\journal-1\file-access.bin: Size{2400} MaxSize{2400}, CacheStats{hitCount=271, missCount=6153, loadSuccessCount=6154, loadExceptionCount=0, totalLoadTime=644674100, evictionCount=4561} 
+Performance may suffer from in-memory cache misses. Increase max heap size of Gradle build process to reduce cache misses.
+2021-06-01T19:31:07.690+0100 [INFO] [org.gradle.cache.internal.LoggingEvictionListener] Cache entries evicted. In-memory cache of C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\journal-1\file-access.bin: Size{2400} MaxSize{2400}, CacheStats{hitCount=271, missCount=6393, loadSuccessCount=6394, loadExceptionCount=0, totalLoadTime=661068200, evictionCount=4801} 
+Performance may suffer from in-memory cache misses. Increase max heap size of Gradle build process to reduce cache misses.
+2021-06-01T19:31:07.697+0100 [DEBUG] [org.gradle.cache.internal.AbstractCacheCleanup] Artifact transforms cache (C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\transforms-2) [subdir: C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\transforms-2\files-2.1] cleanup deleted 0 files/directories.
+2021-06-01T19:31:07.701+0100 [INFO] [org.gradle.cache.internal.DefaultPersistentDirectoryStore] Artifact transforms cache (C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\transforms-2) cleaned up in 1.014 secs.
+2021-06-01T19:31:07.703+0100 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for artifact cache (C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\modules-2)
+2021-06-01T19:31:07.704+0100 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache module-artifacts.bin (C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\modules-2\metadata-2.96\module-artifacts.bin)
+2021-06-01T19:31:07.705+0100 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache module-metadata.bin (C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\modules-2\metadata-2.96\module-metadata.bin)
+2021-06-01T19:31:07.706+0100 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache module-artifact.bin (C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\modules-2\metadata-2.96\module-artifact.bin)
+2021-06-01T19:31:07.707+0100 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache resource-at-url.bin (C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\modules-2\metadata-2.96\resource-at-url.bin)
+2021-06-01T19:31:07.709+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on artifact cache (C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\modules-2).
+2021-06-01T19:31:07.712+0100 [DEBUG] [org.gradle.cache.internal.DefaultPersistentDirectoryStore] artifact cache (C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\modules-2) has last been fully cleaned up 29 hours ago
+2021-06-01T19:31:07.717+0100 [DEBUG] [org.gradle.cache.internal.AbstractCacheCleanup] artifact cache (C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\modules-2) cleanup deleted 0 files/directories.
+2021-06-01T19:31:07.720+0100 [DEBUG] [org.gradle.cache.internal.AbstractCacheCleanup] artifact cache (C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\modules-2) [subdir: C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\modules-2\resources-2.1] cleanup deleted 0 files/directories.
+2021-06-01T19:31:07.721+0100 [INFO] [org.gradle.cache.internal.LeastRecentlyUsedCacheCleanup] artifact cache (C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\modules-2) [subdir: C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\modules-2\resources-2.1] removing files not accessed on or after Sun May 02 19:28:18 BST 2021.
+2021-06-01T19:31:07.721+0100 [DEBUG] [org.gradle.cache.internal.AbstractCacheCleanup] artifact cache (C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\modules-2) [subdir: C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\modules-2\resources-2.1] cleanup deleted 0 files/directories.
+2021-06-01T19:31:07.725+0100 [DEBUG] [org.gradle.cache.internal.AbstractCacheCleanup] artifact cache (C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\modules-2) [subdir: C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\modules-2\files-2.1] cleanup deleted 0 files/directories.
+2021-06-01T19:31:07.725+0100 [INFO] [org.gradle.cache.internal.LeastRecentlyUsedCacheCleanup] artifact cache (C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\modules-2) [subdir: C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\modules-2\files-2.1] removing files not accessed on or after Sun May 02 19:28:18 BST 2021.
+2021-06-01T19:31:08.178+0100 [INFO] [org.gradle.cache.internal.LoggingEvictionListener] Cache entries evicted. In-memory cache of C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\journal-1\file-access.bin: Size{2400} MaxSize{2400}, CacheStats{hitCount=271, missCount=6633, loadSuccessCount=6634, loadExceptionCount=0, totalLoadTime=718625400, evictionCount=5041} 
+Performance may suffer from in-memory cache misses. Increase max heap size of Gradle build process to reduce cache misses.
+2021-06-01T19:31:08.625+0100 [INFO] [org.gradle.cache.internal.LoggingEvictionListener] Cache entries evicted. In-memory cache of C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\journal-1\file-access.bin: Size{2400} MaxSize{2400}, CacheStats{hitCount=271, missCount=6873, loadSuccessCount=6874, loadExceptionCount=0, totalLoadTime=766062600, evictionCount=5281} 
+Performance may suffer from in-memory cache misses. Increase max heap size of Gradle build process to reduce cache misses.
+2021-06-01T19:31:08.857+0100 [DEBUG] [org.gradle.cache.internal.AbstractCacheCleanup] artifact cache (C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\modules-2) [subdir: C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\modules-2\files-2.1] cleanup deleted 0 files/directories.
+2021-06-01T19:31:08.861+0100 [DEBUG] [org.gradle.cache.internal.AbstractCacheCleanup] artifact cache (C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\modules-2) [subdir: C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\modules-2\metadata-2.96] cleanup deleted 0 files/directories.
+2021-06-01T19:31:08.862+0100 [INFO] [org.gradle.cache.internal.DefaultPersistentDirectoryStore] artifact cache (C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\modules-2) cleaned up in 1.15 secs.
+2021-06-01T19:31:08.863+0100 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for journal cache (C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\journal-1)
+2021-06-01T19:31:08.864+0100 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache file-access.bin (C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\journal-1\file-access.bin)
+2021-06-01T19:31:08.865+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on journal cache (C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\journal-1).
+2021-06-01T19:31:08.866+0100 [DEBUG] [org.gradle.cache.internal.DefaultCacheAccess] Cache Generated Gradle JARs cache (C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\6.7.1\generated-gradle-jars) was closed 0 times.
+2021-06-01T19:31:08.869+0100 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for file hash cache (C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\6.7.1\fileHashes)
+2021-06-01T19:31:08.869+0100 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache fileHashes.bin (C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\6.7.1\fileHashes\fileHashes.bin)
+2021-06-01T19:31:08.870+0100 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache resourceHashesCache.bin (C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\6.7.1\fileHashes\resourceHashesCache.bin)
+2021-06-01T19:31:08.871+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on file hash cache (C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\6.7.1\fileHashes).
+2021-06-01T19:31:08.873+0100 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for execution history cache (C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\6.7.1\executionHistory)
+2021-06-01T19:31:08.873+0100 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache executionHistory.bin (C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\6.7.1\executionHistory\executionHistory.bin)
+2021-06-01T19:31:08.874+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on execution history cache (C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches\6.7.1\executionHistory).
+2021-06-01T19:31:08.882+0100 [DEBUG] [org.gradle.cache.internal.VersionSpecificCacheCleanupAction] Processed version-specific caches at C:\Users\farom\OneDrive - Griffith College\Documents\School\4th Year\4. Software Development Project\Software_Developement_Project\app\caches for cleanup in 0.005 secs
+Daemon vm is shutting down... The daemon has exited normally or was terminated in response to a user interrupt.
+2021-06-01T19:31:08.909+0100 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Removing daemon address: [2be1bbfc-7c83-46e4-85e1-7e509ac060ff port:62404, addresses:[localhost/127.0.0.1]]
+2021-06-01T19:31:08.911+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2021-06-01T19:31:08.914+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2021-06-01T19:31:08.928+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2021-06-01T19:31:08.935+0100

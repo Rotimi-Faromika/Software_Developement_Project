@@ -41,4 +41,32 @@
     <string name="total_price">Total Price =</string>
     <string name="next">Next</string>
     <string name="product_quantity" tools:keep="@string/product_quantity">Product Quantity</string>
+    <string name="please_confirm_your_shipment_details">Please Confirm your Shipment Details</string>
+    <string name="your_name">Your Name</string>
+    <string name="your_phone_number">Your Phone Number</string>
+    <string name="your_home_address">Your Home Address</string>
+    <string name="confirm">Confirm</string>
+    <string name="congratulations_your_order_has_been_placed">Congratulations, Your Order has been Placed.</string>
+    <string name="check_new_orders">Check New Orders</string>
+    <string name="new_orders">New Orders</string>
+    <string name="address_">Address =</string>
+    <string name="date_time">Date , Time =</string>
+    <string name="show_this_order_products">Show This Order Products</string>
+    <string name="products">Products</string>
+    <string name="search">Search</string>
+    <string name="maintain_products">Maintain Products</string>
+    <string name="apply_changes">Apply Changes</string>
+    <string name="delete_this_product">Delete This Product</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="set_security_questions">Set Security Questions</string>
+    <string name="answer_the_following_questions">Answer the Following Questions</string>
+    <string name="please_write_your_phone_number">Please write your phone number.</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="where_your_parents_first_met">Where your parents first met?</string>
+    <string name="who_is_your_favourite_super_hero">Who is your favourite super hero?</string>
+    <string name="verify">Verify</string>
+    <string name="straight_to_homepage">Straight To HomePage.</string>
+    <string name="confirm_payment">Confirm Payment</string>
+    <string name="reserve_product">Reserve Product</string>
+    <string name="please_confirm_your_reservation_details">Please Confirm Your Reservation Details</string>
 </resources>

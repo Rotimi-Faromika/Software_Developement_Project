@@ -1,6 +1,5 @@
 package com.example.software_development_project;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
@@ -21,18 +20,22 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.squareup.picasso.Picasso;
 
+import org.jetbrains.annotations.NotNull;
+
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.HashMap;
+import java.util.Locale;
+import java.util.Objects;
 
 public class ProductDetailsActivity extends AppCompatActivity {
 
     @SuppressWarnings("FieldCanBeLocal")
-    private Button addToCart;
+    private Button addToCart, reserveButton;
     private ImageView productImage;
     private ElegantNumberButton numberButton;
     private TextView productPrice, productDescription, productName;
-    private String productID = "";
+    private String productID = "", state = "Normal";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,13 +50,29 @@ public class ProductDetailsActivity extends AppCompatActivity {
         productPrice = findViewById(R.id.product_price_details);
         productDescription = findViewById(R.id.product_description_details);
         productName = findViewById(R.id.product_name_details);
+        reserveButton = findViewById(R.id.reserve_product);
 
         getProductDetails(productID);
 
-        //noinspection CodeBlock2Expr
         addToCart.setOnClickListener(v -> {
-            addingToCartList();
+
+            if(state.equals("Order Placed") || state.equals("Order Shipped")){
+                Toast.makeText(this, "you can purchase more items, once your item is confirmed or" +
+                                " shipped", Toast.LENGTH_LONG).show();
+            } else{
+                addingToCartList();
+            }
         });
+        reserveButton.setOnClickListener(v ->{
+            Intent intent = new Intent(ProductDetailsActivity.this, ReservationActivity.class);
+            startActivity(intent);
+        });
+    }
+
+    protected void onStart(){
+        super.onStart();
+        CheckOrderState();
+
     }
 
     private void addingToCartList() {
@@ -61,14 +80,14 @@ public class ProductDetailsActivity extends AppCompatActivity {
 
         Calendar calForDate = Calendar.getInstance();
 
-        @SuppressLint("SimpleDateFormat") SimpleDateFormat currentDate = new SimpleDateFormat("MMM dd, yyyy");
+        SimpleDateFormat currentDate = new SimpleDateFormat("MMM dd, yyyy", Locale.UK);
         saveCurrentDate = currentDate.format(calForDate.getTime());
 
-        @SuppressLint("SimpleDateFormat") SimpleDateFormat currentTime = new SimpleDateFormat("HH:mm:ss a");
+        SimpleDateFormat currentTime = new SimpleDateFormat("HH:mm:ss a", Locale.UK);
         saveCurrentTime = currentTime.format(calForDate.getTime());
 
         final DatabaseReference cartListRef = FirebaseDatabase.getInstance().getReference().child(
-                "Cart" + " List");
+                "Cart List");
         final HashMap<String, Object> cartMap = new HashMap<>();
         cartMap.put("pid", productID);
         cartMap.put("pname", productName.getText().toString());
@@ -78,10 +97,10 @@ public class ProductDetailsActivity extends AppCompatActivity {
         cartMap.put("quantity", numberButton.getNumber());
         cartMap.put("discount", "");
 
-        cartListRef.child("User View ").child(Prevalent.currentOnlineUser.getPhone()).child(
+        cartListRef.child("User View").child(Prevalent.currentOnlineUser.getPhone()).child(
                 "Products").child(productID).updateChildren(cartMap).addOnCompleteListener(task -> {
             if (task.isSuccessful()) {
-                cartListRef.child("Admin View ").child(Prevalent.currentOnlineUser.getPhone()).child(
+                cartListRef.child("Admin View").child(Prevalent.currentOnlineUser.getPhone()).child(
                         "Products").child(productID).updateChildren(cartMap).addOnCompleteListener(task1 -> {
                     if (task1.isSuccessful()) {
                         Toast.makeText(ProductDetailsActivity.this, "Added to Cart List.",
@@ -114,6 +133,33 @@ public class ProductDetailsActivity extends AppCompatActivity {
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+    }
+
+    private void CheckOrderState(){
+        DatabaseReference ordersRef;
+        ordersRef =
+                FirebaseDatabase.getInstance().getReference().child("Orders").child(Prevalent.currentOnlineUser.getPhone());
+        ordersRef.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull @NotNull DataSnapshot snapshot) {
+                if(snapshot.exists()){
+
+                    String shippingState = Objects.requireNonNull(snapshot.child("state").getValue()).toString();
+
+                    if(shippingState.equals("shipped")){
+                        state = "Order Shipped";
+                    } else if (shippingState.equals("not shipped")){
+                        state = "Order Placed";
+                    }
+
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull @NotNull DatabaseError error) {
 
             }
         });

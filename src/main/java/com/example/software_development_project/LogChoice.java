@@ -36,6 +36,8 @@ public class LogChoice extends AppCompatActivity {
         loadingBar = new ProgressDialog(this);
 
         Paper.init(this);
+        String UserPhoneKey = Paper.book().read(Prevalent.UserPhoneKey);
+        String UserPasswordKey = Paper.book().read(Prevalent.userPasswordKey);
 
         loginButton.setOnClickListener(v -> {
             Intent intent = new Intent(LogChoice.this, LoginActivity.class);
@@ -46,12 +48,12 @@ public class LogChoice extends AppCompatActivity {
             startActivity(intent);
         });
         homePage.setOnClickListener(v -> {
-            Intent intent = new Intent(LogChoice.this, HomeActivity.class);
-            startActivity(intent);
+            if(TextUtils.isEmpty(UserPhoneKey) && TextUtils.isEmpty(UserPasswordKey)){
+                Intent intent = new Intent(LogChoice.this, HomeActivity.class);
+                startActivity(intent);
+            }
         });
 
-        String UserPhoneKey = Paper.book().read(Prevalent.UserPhoneKey);
-        String UserPasswordKey = Paper.book().read(Prevalent.userPasswordKey);
 
         if(!TextUtils.isEmpty(UserPhoneKey) && !TextUtils.isEmpty(UserPasswordKey)){
             AllowAccess(UserPhoneKey, UserPasswordKey);

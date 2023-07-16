@@ -2,7 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:dist="http://schemas.android.com/apk/distribution"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.software_development_project"
     tools:node="merge">
 
     <dist:module dist:instant="true" />
@@ -24,14 +23,22 @@
         tools:ignore="AllowBackup"
         tools:replace="android:appComponentFactory"
         tools:targetApi="p">
+        <activity android:name=".ReservationActivity"></activity>
+        <activity android:name=".PaymentActivity" />
+        <activity android:name=".ResetPasswordActivity" />
+        <activity android:name=".Admin.AdminMaintainProductsActivity" />
+        <activity android:name=".SearchProductsActivity" />
+        <activity android:name=".Admin.AdminUserProductsActivity" />
+        <activity android:name=".Admin.AdminNewOrdersActivity" />
+        <activity android:name=".ConfirmOrderActivity" />
         <activity android:name=".CartActivity" />
         <activity android:name=".ProductDetailsActivity" />
         <activity
             android:name=".HomeActivity"
             android:label="@string/title_activity_home"
             android:theme="@style/Theme.Software_Development_Project.NoActionBar" />
-        <activity android:name=".AdminCategory" />
-        <activity android:name=".AdminProductActivity" />
+        <activity android:name=".Admin.AdminCategoryActivity" />
+        <activity android:name=".Admin.AdminProductActivity" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".LogChoice" />

@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "830437753426",
+    "firebase_url": "https://software-development-pro-ba36f-default-rtdb.firebaseio.com",
     "project_id": "software-development-pro-ba36f",
     "storage_bucket": "software-development-pro-ba36f.appspot.com"
   },
@@ -10,6 +11,35 @@
         "mobilesdk_app_id": "1:830437753426:android:ba1ca26b91add4cc32958b",
         "android_client_info": {
           "package_name": "com.example.software_developement_project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "830437753426-5jfs6t7hi0is9ah0j122oj12kvek4r3c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_AiAjdqGoaI-z2E0IycDZ9JAV3Nr58ss"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "830437753426-5jfs6t7hi0is9ah0j122oj12kvek4r3c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:830437753426:android:7964c309cccc6b4232958b",
+        "android_client_info": {
+          "package_name": "com.example.software_development_project"
         }
       },
       "oauth_client": [

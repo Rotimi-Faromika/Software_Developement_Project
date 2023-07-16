@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AdminCategory"
+    tools:context=".Admin.AdminCategoryActivity"
     tools:ignore="ExtraText">
 
     <TextView
@@ -24,7 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/slogan_space"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="45dp"
+        android:layout_marginTop="10dp"
         android:gravity="center"
         android:orientation="horizontal">
 
@@ -59,7 +59,7 @@
         android:layout_below="@+id/linear_category"
         android:layout_centerHorizontal="true"
         android:gravity="center"
-        android:layout_marginTop="45dp">
+        android:layout_marginTop="10dp">
         <ImageView
             android:id="@+id/sweaters"
             android:layout_width="80dp"
@@ -91,7 +91,7 @@
         android:layout_below="@+id/linear_category2"
         android:layout_centerHorizontal="true"
         android:gravity="center"
-        android:layout_marginTop="45dp">
+        android:layout_marginTop="10dp">
 
         <ImageView
             android:id="@+id/hoodies"
@@ -101,5 +101,47 @@
             tools:ignore="ContentDescription"/>
 
     </LinearLayout>
+
+    <Button
+        android:id="@+id/maintain"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_above="@id/check_orders"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="140dp"
+        android:padding="10dp"
+        android:text="@string/maintain_products"
+        android:textColor="@color/black"
+        android:textSize="16sp"/>
+
+    <Button
+        android:id="@+id/check_orders"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_above="@id/admin_logout_orders"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="80dp"
+        android:padding="10dp"
+        android:text="@string/check_new_orders"
+        android:textColor="@color/black"
+        android:textSize="16sp"/>
+
+    <Button
+        android:id="@+id/admin_logout_orders"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="15dp"
+        android:padding="10dp"
+        android:text="@string/logout"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        />
 
 </RelativeLayout>

@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -36,8 +37,9 @@ import de.hdodenhof.circleimageview.CircleImageView;
 public class SettingsActivity extends AppCompatActivity {
 
     private CircleImageView profileImageView;
-    private EditText fullNameEdit, userPhoneEdit, addressEdit, passwordEdit;
+    private EditText fullNameEdit, userPhoneEdit, addressEdit;
     private TextView profileChange, closeText, updateText;
+    private Button securityQuestions;
 
     private Uri ImageUri;
     private String myUrl = "";
@@ -59,15 +61,21 @@ public class SettingsActivity extends AppCompatActivity {
         fullNameEdit = findViewById(R.id.settings_full_name);
         userPhoneEdit = findViewById(R.id.settings_phone_number);
         addressEdit = findViewById(R.id.settings_address);
-        passwordEdit = findViewById(R.id.settings_password);
         profileChange = findViewById(R.id.profile_change);
         closeText = findViewById(R.id.close_settings);
         updateText = findViewById(R.id.update_settings);
+        securityQuestions = findViewById(R.id.security_questions);
 
-
-        userInfoDisplay(profileImageView, fullNameEdit, userPhoneEdit, addressEdit, passwordEdit, profileChange, closeText, updateText);
+        userInfoDisplay(profileImageView, fullNameEdit, userPhoneEdit, addressEdit, profileChange, closeText, updateText);
 
         closeText.setOnClickListener(v -> finish());
+
+        securityQuestions.setOnClickListener(v -> {
+            Intent intent = new Intent(SettingsActivity.this, ResetPasswordActivity.class);
+            intent.putExtra("check", "settings");
+            startActivity(intent);
+        });
+
         updateText.setOnClickListener(v -> {
             if (checker.equals("clicked")) {
                 userInfoSaved();
@@ -88,7 +96,6 @@ public class SettingsActivity extends AppCompatActivity {
         userMap.put("name", fullNameEdit.getText().toString());
         userMap.put("address", addressEdit.getText().toString());
         userMap.put("phoneOrder", userPhoneEdit.getText().toString());
-        userMap.put("password", passwordEdit.getText().toString());
         ref.child(Prevalent.currentOnlineUser.getPhone()).updateChildren(userMap);
 
         startActivity(new Intent(SettingsActivity.this, HomeActivity.class));
@@ -118,14 +125,11 @@ public class SettingsActivity extends AppCompatActivity {
         if (TextUtils.isEmpty(fullNameEdit.getText().toString())) {
             Toast.makeText(this, "Name is Mandatory.", Toast.LENGTH_SHORT).show();
 
-        } /*else  if(TextUtils.isEmpty(addressEdit.getText().toString())){
-            Toast.makeText(this, "Name is Mandatory.", Toast.LENGTH_SHORT).show();
+        } else  if(TextUtils.isEmpty(addressEdit.getText().toString())){
+            Toast.makeText(this, "Address is Mandatory.", Toast.LENGTH_SHORT).show();
 
-        }*/ else if (TextUtils.isEmpty(userPhoneEdit.getText().toString())) {
+        } else if (TextUtils.isEmpty(userPhoneEdit.getText().toString())) {
             Toast.makeText(this, "Phone Number is Mandatory.", Toast.LENGTH_SHORT).show();
-
-        } else if (TextUtils.isEmpty(passwordEdit.getText().toString())) {
-            Toast.makeText(this, "Password is Mandatory.", Toast.LENGTH_SHORT).show();
 
         } else if (checker.equals("clicked")) {
             uploadImage();
@@ -162,7 +166,6 @@ public class SettingsActivity extends AppCompatActivity {
                     userMap.put("name", fullNameEdit.getText().toString());
                     userMap.put("address", addressEdit.getText().toString());
                     userMap.put("phoneOrder", userPhoneEdit.getText().toString());
-                    userMap.put("password", passwordEdit.getText().toString());
                     userMap.put("image", myUrl);
                     ref.child(Prevalent.currentOnlineUser.getPhone()).updateChildren(userMap);
 
@@ -185,7 +188,7 @@ public class SettingsActivity extends AppCompatActivity {
     @SuppressWarnings("unused")
     private void userInfoDisplay(CircleImageView profileImageView, EditText fullNameEdit,
                                  EditText userPhoneEdit, EditText addressEdit,
-                                 EditText passwordEdit, TextView profileChange, TextView closeText,
+                                  TextView profileChange, TextView closeText,
                                  TextView updateText) {
         DatabaseReference UsersRef =
                 FirebaseDatabase.getInstance().getReference().child("Users").child(Prevalent.currentOnlineUser.getPhone());
@@ -196,17 +199,20 @@ public class SettingsActivity extends AppCompatActivity {
                     if (snapshot.child("image").exists()) {
                         //noinspection UnusedAssignment
                         String image = "";
-                        image = Objects.requireNonNull(snapshot.child("Image").getValue()).toString();
-                        String name = Objects.requireNonNull(snapshot.child("Name").getValue()).toString();
-                        String phone = Objects.requireNonNull(snapshot.child("Phone").getValue()).toString();
-                        String password = Objects.requireNonNull(snapshot.child("Password").getValue()).toString();
-                        String address = Objects.requireNonNull(snapshot.child("Address").getValue()).toString();
 
-                        Picasso.get().load(image).into(profileImageView);
-                        fullNameEdit.setText(name);
-                        userPhoneEdit.setText(phone);
-                        passwordEdit.setText(password);
-                        addressEdit.setText(address);
+                        Intent intent = getIntent();
+                        Bundle bundle = intent.getExtras();
+                        if(bundle != null){
+                            image = Objects.requireNonNull(snapshot.child("Image").getValue()).toString();
+                            String name = Objects.requireNonNull(snapshot.child("Name").getValue()).toString();
+                            String phone = Objects.requireNonNull(snapshot.child("Phone").getValue()).toString();
+                            String address = Objects.requireNonNull(snapshot.child("Address").getValue()).toString();
+
+                            Picasso.get().load(image).into(profileImageView);
+                            fullNameEdit.setText(name);
+                            userPhoneEdit.setText(phone);
+                            addressEdit.setText(address);
+                        }
 
                     }
                 }

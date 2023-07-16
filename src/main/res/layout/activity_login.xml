@@ -13,16 +13,19 @@
         android:layout_alignParentTop="true"
         android:layout_marginEnd="88dp"
         android:layout_marginTop="190dp"
+        android:padding="10dp"
         android:text="@string/brand_name"
         android:textAlignment="center"
         android:textSize="22sp"
-        android:textStyle="bold|italic"/>
+        android:textStyle="bold|italic"
+        />
 
     <EditText
         android:id="@+id/phone_number"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="20dp"
+        android:layout_marginTop="15dp"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
         android:layout_below="@+id/name"
@@ -31,7 +34,8 @@
         android:textSize="17sp"
         android:textStyle="bold"
         android:autofillHints=""
-        tools:ignore="TextFields" />
+        tools:ignore="TextFields"
+        />
 
     <EditText
         android:id="@+id/password"
@@ -47,7 +51,8 @@
         android:textSize="17sp"
         android:textStyle="bold"
         android:autofillHints=""
-        tools:ignore="TextFields" />
+        tools:ignore="TextFields"
+        />
 
     <LinearLayout
         android:id="@+id/linear_layout"
@@ -55,33 +60,46 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_below="@+id/password"
-        android:layout_marginTop="5dp"/>
+        android:layout_marginTop="5dp"
+        >
+        <com.rey.material.widget.CheckBox
+            android:id="@+id/remember_me"
+            style="@style/Material.Drawable.CheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:gravity="center_vertical"
+            android:text="@string/remember_me"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:ignore="RelativeOverlap"
+            />
 
-    <com.rey.material.widget.CheckBox
-        android:id="@+id/remember_me"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        style="@style/Material.Drawable.CheckBox"
-        android:text="@string/remember_me"
-        android:gravity="center_vertical"
-        android:layout_below="@+id/password"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        android:layout_marginStart="17dp"
-        tools:ignore="RelativeOverlap" />
+        <TextView
+            android:id="@+id/forgot_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="72dp"
+            android:text="@string/forgot_password"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            tools:ignore="RelativeOverlap" />
+    </LinearLayout>
 
     <Button
         android:id="@+id/login_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/remember_me"
-        android:layout_marginTop="5dp"
+        android:layout_below="@id/linear_layout"
+        android:layout_marginTop="15dp"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
         android:padding="20dp"
         android:textAllCaps="false"
         android:textSize="18sp"
-        android:text="@string/login"/>
+        android:text="@string/login"
+        />
 
     <TextView
         android:id="@+id/admin"
@@ -92,6 +110,7 @@
         android:layout_below="@id/login_btn"
         android:textStyle="bold"
         android:textSize="20sp"
+        android:layout_marginTop="15dp"
         android:layout_marginStart="80dp"
         android:layout_marginEnd="23dp"
         />
@@ -104,8 +123,12 @@
         android:layout_alignParentStart="true"
         android:layout_below="@id/login_btn"
         android:textSize="20sp"
+        android:layout_marginTop="15dp"
         android:layout_marginLeft="80dp"
+        android:padding ='10dp'
         android:layout_marginStart="25dp"
-        android:visibility="invisible"/>
+        android:visibility="invisible"
+        tools:ignore="RtlHardcoded"
+        />
 
 </RelativeLayout>

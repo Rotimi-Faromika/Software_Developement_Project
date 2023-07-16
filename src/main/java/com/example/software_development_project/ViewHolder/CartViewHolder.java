@@ -22,9 +22,9 @@ public class CartViewHolder extends RecyclerView.ViewHolder implements View.OnCl
     }
 
     @Override
-    public void onClick(View v) {
+    public void onClick(View view) {
         //noinspection deprecation
-        itemClickListener.onClick(v, getAdapterPosition(), false);
+        itemClickListener.onClick(view, getAdapterPosition(), false);
     }
 
     public void setItemClickListener(ItemClickListener itemClickListener) {

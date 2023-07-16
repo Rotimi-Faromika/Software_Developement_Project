@@ -11,16 +11,10 @@
             android:title="@string/cart"
             tools:targetApi="o" />
         <item
-            android:id="@+id/nav_orders"
+            android:id="@+id/nav_search"
             android:icon="@drawable/category"
             android:iconTint="@android:color/darker_gray"
-            android:title="@string/orders"
-            tools:targetApi="o" />
-        <item
-            android:id="@+id/nav_categories"
-            android:icon="@drawable/categories"
-            android:iconTint="@android:color/darker_gray"
-            android:title="@string/categories"
+            android:title="@string/search"
             tools:targetApi="o" />
         <item
             android:id="@+id/nav_settings"

@@ -14,6 +14,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.software_development_project.Admin.AdminCategoryActivity;
 import com.example.software_development_project.Model.Users;
 import com.example.software_development_project.Prevalent.Prevalent;
 import com.google.firebase.database.DataSnapshot;
@@ -30,7 +31,8 @@ public class LoginActivity extends AppCompatActivity {
     private EditText inputPassword;
     private Button LoginButton;
     private ProgressDialog loadingBar;
-    private TextView AdminLink, NotAdminLink;
+    @SuppressWarnings("FieldCanBeLocal")
+    private TextView AdminLink, NotAdminLink, ForgetPasswordLink;
 
     private String parentDb = "Users";
     private CheckBox chkBox;
@@ -47,10 +49,18 @@ public class LoginActivity extends AppCompatActivity {
         loadingBar = new ProgressDialog(this);
         AdminLink = findViewById(R.id.admin);
         NotAdminLink = findViewById(R.id.not_admin);
+        ForgetPasswordLink = findViewById(R.id.forgot_password);
         chkBox = findViewById(R.id.remember_me);
         Paper.init(this);
 
         LoginButton.setOnClickListener(v -> LoginUser());
+
+        ForgetPasswordLink.setOnClickListener(v -> {
+            Intent intent = new Intent(LoginActivity.this, ResetPasswordActivity.class);
+            intent.putExtra("check", "login");
+            startActivity(intent);
+        });
+
         AdminLink.setOnClickListener(v -> {
             LoginButton.setText("Login Admin");
             AdminLink.setVisibility(View.INVISIBLE);
@@ -110,7 +120,7 @@ public class LoginActivity extends AppCompatActivity {
                                        Toast.LENGTH_SHORT).show();
                                loadingBar.dismiss();
 
-                               Intent intent = new Intent(LoginActivity.this, AdminCategory.class);
+                               Intent intent = new Intent(LoginActivity.this, AdminCategoryActivity.class);
                                startActivity(intent);
                            } else if(parentDb.equals("Users")){
                                Toast.makeText(LoginActivity.this, "Logged in Successfully..",

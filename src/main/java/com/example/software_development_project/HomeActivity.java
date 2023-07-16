@@ -20,6 +20,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.software_development_project.Admin.AdminMaintainProductsActivity;
 import com.example.software_development_project.Model.Products;
 import com.example.software_development_project.Prevalent.Prevalent;
 import com.example.software_development_project.ViewHolder.ProductViewHolder;
@@ -41,11 +42,19 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     RecyclerView.LayoutManager layoutManager;
     private DatabaseReference ProductsRef;
     private RecyclerView recyclerView;
+    private String type = "";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        final Intent[] intent = {getIntent()};
+        Bundle bundle = intent[0].getExtras();
+        if(bundle != null){
+           type = getIntent().getExtras().get("Admin").toString();
+        }
 
         ProductsRef = FirebaseDatabase.getInstance().getReference().child("Products");
 
@@ -56,9 +65,11 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         setSupportActionBar(toolbar);
 
         FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(v -> {
-            Intent intent = new Intent(HomeActivity.this, CartActivity.class);
-            startActivity(intent);
+        fab.setOnClickListener(view -> {
+            if (!type.equals("Admin")){
+                intent[0] = new Intent(HomeActivity.this, CartActivity.class);
+                startActivity(intent[0]);
+            }
         });
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
@@ -74,9 +85,10 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         @SuppressWarnings("unused")
         CircleImageView profileImageView = headerView.findViewById(R.id.profile_picture);
 
-        userNameTextView.setText(Prevalent.currentOnlineUser.getName());
-        Picasso.get().load(Prevalent.currentOnlineUser.getImage()).placeholder(R.drawable.profile).into(profileImageView);
-
+        if (!type.equals("Admin")){
+            userNameTextView.setText(Prevalent.currentOnlineUser.getName());
+            Picasso.get().load(Prevalent.currentOnlineUser.getImage()).fit().placeholder(R.drawable.profile).into(profileImageView);
+        }
         recyclerView = findViewById(R.id.recycler_menu);
         recyclerView.setHasFixedSize(true);
         layoutManager = new LinearLayoutManager(this);
@@ -104,21 +116,27 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                                                     @NonNull Products products) {
                         holder.txtProductName.setText(products.getPname());
                         holder.txtProductDescription.setText(products.getDescription());
-                        holder.txtProductPrice.setText("Price = " + products.getPrice());
+                        holder.txtProductPrice.setText("Price = " + products.getPrice() + "€");
                         Picasso.get().load(products.getImage()).fit().into(holder.imageView);
 
                         holder.itemView.setOnClickListener(v -> {
-                            Intent intent = new Intent(HomeActivity.this, ProductDetailsActivity.class);
-                            intent.putExtra("pid", products.getPid());
-                            startActivity(intent);
+                            //noinspection IfStatementWithIdenticalBranches
+                            if(type.equals("Admin")){
+                                Intent intent = new Intent(HomeActivity.this, AdminMaintainProductsActivity.class);
+                                intent.putExtra("pid", products.getPid());
+                                startActivity(intent);
+                            } else{
+                                Intent intent = new Intent(HomeActivity.this, ProductDetailsActivity.class);
+                                intent.putExtra("pid", products.getPid());
+                                startActivity(intent);
+                            }
                         });
                     }
 
                     @NonNull
                     @Override
                     public ProductViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-                        View view =
-                                LayoutInflater.from(parent.getContext()).inflate(R.layout.product_items_layout, parent, false);
+                        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.product_items_layout, parent, false);
                         //noinspection UnnecessaryLocalVariable
                         ProductViewHolder holder = new ProductViewHolder(view);
                         return holder;
@@ -155,26 +173,33 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         return super.onOptionsItemSelected(item);
     }
 
-    @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         int id = item.getItemId();
         if (id == R.id.nav_cart) {
-            Intent intent = new Intent(HomeActivity.this, CartActivity.class);
-            startActivity(intent);
-        } else if (id == R.id.nav_orders) {
+            if (!type.equals("Admin")){
+                Intent intent = new Intent(HomeActivity.this, CartActivity.class);
+                startActivity(intent);
+            }
+        } else if (id == R.id.nav_search) {
+            if (!type.equals("Admin")){
+                Intent intent = new Intent(HomeActivity.this, SearchProductsActivity.class);
+                startActivity(intent);
+            }
 
-        } else if (id == R.id.nav_categories) {
-
-        } else if (id == R.id.nav_settings) {
-            Intent intent = new Intent(HomeActivity.this, SettingsActivity.class);
-            startActivity(intent);
+        }  else if (id == R.id.nav_settings) {
+            if (!type.equals("Admin")){
+                Intent intent = new Intent(HomeActivity.this, SettingsActivity.class);
+                startActivity(intent);
+            }
         } else if (id == R.id.nav_logout) {
-            Paper.book().destroy();
-            Intent intent = new Intent(HomeActivity.this, LogChoice.class);
-            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-            startActivity(intent);
-            finish();
+            if (!type.equals("Admin")){
+                Paper.book().destroy();
+                Intent intent = new Intent(HomeActivity.this, LogChoice.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                startActivity(intent);
+                finish();
+            }
         }
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

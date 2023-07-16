@@ -21,6 +21,7 @@ import java.util.HashMap;
 
 public class RegisterActivity extends AppCompatActivity {
 
+    @SuppressWarnings("FieldCanBeLocal")
     private Button regButton;
     private EditText Name, PhoneNumber, Password;
     private ProgressDialog loadingBar;
